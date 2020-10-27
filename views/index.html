@@ -1,0 +1,327 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>Dance Animations</title>
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <!-- import the webpage's stylesheet -->
+    
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.centre.js"></script>
+    <script src="js/jquery.svg.js"></script>
+    <script src="js/jquery.svganim.js"></script>
+    
+    <!--
+    <script src="jquerysvg.js"></script>
+    
+-->
+    
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dance Animations</h1>
+      <h4>
+        Made by Alison Stevens based on <a href="http://dancekaleidoscope.org.au/dance.html" target="blank">an app</a> by Keith Wood
+      </h4>
+    </header>
+
+    <main>
+      <p>
+        Choose a category:
+        <select id="type">
+          <option value="">All</option>
+        </select>
+        and
+        <select id="type2">
+          <option value="">All</option>
+        </select>
+      </p>
+      <p>
+        Search for a dance: <input type="text" id="search" />
+        <span class="note">(in the list below)</span>
+      </p>
+      <p>
+        Choose a dance:
+        <select id="dance">
+          <option value="">Select a dance</option>
+        </select>
+        <img
+          id="wait"
+          src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2Fwait.gif"
+          alt="Waiting..."
+        />
+      </p>
+      <p class="multiline">
+        <label>Music:</label><span id="music">&#160;</span>
+      </p>
+      <p>
+        <label for="numdancers">Number of dancers: </label><input type="number" id="numdancers" step="2" />
+      </p>
+      <p>
+        <label for="colorscheme">Color scheme: </label>
+        <select id="colorscheme" name="colorscheme">
+          <option value="lark" selected>Larks yellow, robins red</option>
+          <option value="couple">By couple</option>
+        </select>
+      </p>
+      <h2 id="name"></h2>
+      <p class="multiline">
+        <label>Formation:</label><span id="formation">&#160;</span>
+      </p>
+      
+      <p class="multiline">
+        <label>Author:</label><span id="author">&#160;</span>
+      </p>
+      <p class="multiline">
+        <label>Source:</label><span id="source">&#160;</span>
+      </p>
+      <p class="multiline"><label>Notes:</label><span id="notes">&#160;</span></p>
+      <p>
+        Click on a dancer to turn them blue.
+      </p>
+      
+      <div id="svgdance"></div>
+      <div id="panels">
+        <div id="designPanel">
+          <h3>
+            Edit animation
+          </h3>
+          <p>
+            <label for="time">Time:</label>
+            <input type="number" step="0.1" id="time" />
+          </p>
+          
+          <p>
+            <label for="ptype">Type: </label>
+            <select id="ptype">
+              <option value disabled selected></option>
+              <option value="part">part/call</option>
+              <option value="progress">progress</option>
+              <option value="repeat">repeat</option>
+              <option value="translate">translate</option>
+              <option value="path">path</option>
+              <option value="rotate">rotate</option>
+              <option value="arms">arms</option>
+              <option value="zindex">z-index</option>
+            </select>
+          </p>
+          
+          <p class="translate path rotate arms zindex fields">
+            <label for="who">Who:</label>
+            <input id="who" type="text"/>
+            <div id="whochoices">
+
+            </div>
+          </p>
+          
+          <p class="translate fields">
+            <label for="x">x: </label>
+            <input id="x" type="number" />
+          </p>
+          <p class="translate fields">
+            <label for="y">y: </label>
+            <input id="y" type="number" />
+          </p>
+          <p class="path fields">
+            <label for="path">path: </label>
+            <input id="path" type="text" />
+          </p>
+          <p class="path fields">
+            <label for="dx">dx: </label>
+            <input id="dx" type="number" />
+          </p>
+          <p class="path fields">
+            <label for="dy">dy: </label>
+            <input id="dy" type="number" />
+          </p>
+          <p class="rotate fields">
+            <label for="da">da: </label>
+            <input id="da" type="number" />
+          </p>
+          <p class="arms fields">
+            <label for="rangle">rangle: </label>
+            <input id="rangle" type="text" />
+          </p>
+          <p class="arms fields">
+            <label for="langle">langle: </label>
+            <input id="langle" type="text" />
+          </p>
+          <p class="zindex fields">
+            <label for="front">front: </label>
+            <input id="front" type="text" />
+          </p>
+          <p class="translate path rotate arms fields">
+            <label for="dur">dur:</label>
+            <input id="dur" type="number" />
+          </p>
+          <p class="part fields">
+            <label for="part">Part: </label>
+            <input id="part" type="text" />
+          </p>
+          <p class="part fields">
+            <label for="editCall">Call: </label>
+            <input id="editCall" type="text" />
+          </p>
+          
+        </div>
+        <div id="positionPanel">
+          <h3>
+            Current positions
+          </h3>
+          <table id="dancerpos">
+            <tr><td></td></tr>
+            <tr><th>x</th></tr>
+            <tr><th>y</th></tr>
+            <tr><th>a</th></tr>
+            <tr><th>right arm</th></tr>
+            <tr><th>left arm</th></tr>
+          </table>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+      <p class="multiline"><label>Call:</label><span id="call">&#160;</span></p>
+      <audio id="synchMusic" preload="auto">No music available</audio>
+      <p>
+        Part:
+        <select id="position"><option>0</option></select>
+        <button type="button" id="reset">Reset</button>
+        <button type="button" id="next">Next</button>
+        <button type="button" id="step">Step</button>
+        <button type="button" id="play">Play</button>
+        <input type="checkbox" id="withMusic" checked/><label for="withMusic">with music</label>
+        <button type="button" id="callSheet">Call Sheet</button>
+        <button type="button" id="design">Design</button>
+        
+      </p>
+      
+      <div id="dialogUnderlay"></div>
+      <div id="callSheetDialog" class="dialog">
+        <p class="buttons">
+          <label>&nbsp;</label>
+          <button type="button" class="callClose">Close</button>&nbsp;
+          <button type="button" class="callPrint">Print</button>
+        </p>
+        <div id="callSheetOutput"></div>
+        <p class="buttons">
+          <label>&nbsp;</label>
+          <button type="button" class="callClose">Close</button>&nbsp;
+          <button type="button" class="callPrint">Print</button>
+        </p>
+      </div>
+      <div id="callSheetPrint">
+        <div id="callSheetOutput2"></div>
+      </div>
+      
+      <div id="designArea">
+        <ul class="tabs-nav">
+          <li class="selected">
+            <a href="#editDance"><span>Dance</span></a>
+          </li>
+          <li>
+            <a href="#editPositions"><span>Positions</span></a>
+          </li>
+          <li>
+            <a href="#editOutput"><span>Output</span></a>
+          </li>
+        </ul>
+        <div id="editDance" class="tab">
+          
+          <p>
+            <label>&nbsp;</label>
+            <button type="button" id="newDance">New dance</button>
+          </p>
+          <p>
+            <label for="editTitle">Title:</label>
+            <input id="editTitle" />
+          </p>
+          <p>
+            <label for="editFormation">Formation:</label>
+            <input id="editFormation" />
+          </p>
+          <p>
+            <label for="editSource">Author:</label>
+            <input id="editSource" />
+          </p>
+          <p>
+            <label for="editNotes">Notes:</label>
+            <textarea id="editNotes" rows="5" cols="60"></textarea>
+          </p>
+          <p>
+            <label for="editType">Type:</label>
+            <select id="editType" ></select>
+          </p>
+          
+          <!--<table id="sequence">
+            <thead>
+              <tr>
+                <th>Starting beat</th>
+                <th>Part name</th>
+                <th>Name</th>
+                <th>Who</th>
+                <th>Direction</th>
+                <th>End/distance</th>
+                <th>Duration</th>
+                <th>Call</th>
+              </tr>
+            </thead>
+          </table>-->
+          
+          
+        </div>
+        <div id="editPositions" class="tab">
+          
+          <p>
+            <label>&nbsp;</label>
+            <select id="actionPosition">
+              <option>Add</option>
+              <option>Delete</option>
+              <option disabled>Copy</option>
+              <option disabled>Move</option>
+              <option disabled>Insert</option>
+            </select>
+            <input type="text" id="countPosition" value="1" size="3" />
+            <span id="actionAfter">after
+              <select id="afterPosition"></select>
+            </span>
+            
+            <button type="button" id="goPosition">Go</button>
+          </p>
+          
+          <table id="tablePositions">
+            <thead>
+              <tr>
+                <th class="position">Index</th>
+                <th>Beat</th>
+                <th class="positionCheck">Select</th>
+                <th>Type</th>
+                <th>Who</th>
+                <th>Call</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="editOutput" class="tab">
+          
+          <textarea></textarea>
+        </div>
+      </div>
+      
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Dance Animations Reference</title>
+<style>
+body {
+	font-family: Arial, Helvetica, Sans-serif;
+}
+h1 {
+	border-bottom: 2px solid #484;
+	font-size: 150%;
+}
+h2 {
+	clear: both;
+	border-bottom: 1px solid #484;
+	font-size: 120%;
+}
+h3 {
+	clear: both;
+	border-bottom: 1px solid #484;
+	font-size: 100%;
+}
+pre {
+	margin: 10px 0px;
+}
+dt {
+	margin: 0.5em 0em;
+	font-weight: bold;
+}
+dd {
+	margin: 0em 0em 0.5em 2em;
+}
+img.right {
+	float: right;
+	margin: 0em 0em 0.5em 0.5em;
+}
+a.top {
+	float: right;
+	font-size: 75%;
+}
+#links {
+	margin: 0em 0em 1em;
+	padding: 0em;
+	list-style: none;
+}
+#links li {
+	display: inline-block;
+	padding: 0.25em 1em;
+	border-right: 1px solid #484;
+}
+#links li:last-child {
+	border-right: none;
+}
+</style>
+</head>
+<body>
+<h1 id="top">Dance Animations Reference</h1>
+<p>This application lets you design and play dance animations to help illustrate the movements
+	within the dances.</p>
+<p>The application is implemented as a Web page. It uses <a href="http://www.w3.org/Graphics/SVG/">
+	Scalable Vector Graphics (SVG)</a> to draw the dancers and JavaScript to provide the
+	design interactions and animation. It was written by <a href="http://keith-wood.name">Keith Wood</a>
+	in 2010 and is featured on the <a href="http://www.dancekaleidoscope.org.au/dance.html">
+	Dance Kaleidoscope</a> Web site.</p>
+<ul id="links">
+	<li><a href="#designer">Animation Designer</a></li>
+	<li><a href="#dancer">Dancer Panel</a></li>
+	<li><a href="#replicate">Replicate Dancers Dialog</a></li>
+	<li><a href="#coords">Coordinates Panel</a></li>
+	<li><a href="#dance">Dance Tab</a></li>
+	<li><a href="#new">New Dance Dialog</a></li>
+	<li><a href="#positions">Positions Tab</a></li>
+	<li><a href="#transpose">Transpose Dancers Dialog</a></li>
+	<li><a href="#linear">Linear Progression Dialog</a></li>
+	<li><a href="#3in4">3 in 4 Progression Dialog</a></li>
+	<li><a href="#becket">Becket Progression Dialog</a></li>
+	<li><a href="#flip">Flip Dancers Dialog</a></li>
+	<li><a href="#rotate">Rotate Dancers Dialog</a></li>
+	<li><a href="#output">Output Tab</a></li>
+	<li><a href="#config">Config Tab</a></li>
+	<li><a href="#tips">Tips and Tricks</a></li>
+</ul>
+<h2 id="player">Animation Player</h2>
+<p><img src="img/dancePlay.png" alt="Animation area" title="Animation area" class="right">
+	The animation player reads in the list of available dances from the <code>dances.xml</code> file
+	in the same directory as the Web page. The format of this file is shown below. Each line
+	lists one dance, indicating its definition file and its name. Include categories for
+	the dance as a space-separated list in the <code>type</code> attribute. An underscore (_)
+	in these values is replaced by a space when displayed on the page. Select a category
+	from the drop-down list on the page to filter the list of dances by that type.</p>
+<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;dances&gt;
+	&lt;dance def="AlbertsQuadrille.xml" type="Colonial Square_set"&gt;Alberts Quadrille&lt;/dance&gt;
+	&lt;dance def="AustralianLadies.xml" type="Scottish 4_couple Longways"&gt;Australian Ladies&lt;/dance&gt;
+	...
+&lt;/dances&gt;</pre>
+<p>Once selected, the dance is loaded, its information is displayed at the top of the page,
+	and the initial position is shown in the animation area. Gents are shown in blue and
+	ladies are shown in pink. You can then use the elements
+	at the bottom of the page to control the animation.</p>
+<p><img src="img/danceControls.png" alt="Animation controls" title="Animation controls"></p>
+<dl>
+	<dt>Position</dt>
+	<dd>This drop-down shows the current position (bar) within the dance
+		and lets you change to another position.</dd>
+	<dt>Prev</dt>
+	<dd>Move to the previous position within the dance.</dd>
+	<dt>Next</dt>
+	<dd>Move to the next position within the dance.</dd>
+	<dt>Step</dt>
+	<dd>Animate the dancers to the next position within the dance.</dd>
+	<dt>Play</dt>
+	<dd>Continually animate the dancers through the dance from the current position.</dd>
+	<dt>With music</dt>
+	<dd>Check this box to play the music synchronised with the animation.
+		If no music is defined for the dance the caption reads <em>'no music'</em>.
+		While the music is loading the caption reads <em>'loading music'</em>.
+		Hover over this control to see the name of the music.</dd>
+	<dt>Call sheet</dt>
+	<dd>Display the full text description of all the dance steps, along with the bar count.</dd>
+	<dt>Design/Display</dt>
+	<dd>Switch modes between displaying and designing the dance. In design mode
+		several tabs appear beneath these controls and a dancer panel appears
+		to the right of the animation area. These are described further below.</dd>
+</dl>
+<h2 id="designer">Animation Designer <a href="#top" class="top">Top</a></h2>
+<p><img src="img/danceDesign.png" alt="Designer area" title="Designer area" class="right">
+	The designer consists of the dancer and coordinates panels to the right of the animation
+	area and several tabs at the bottom of the page. Together these allow you to
+	modify all aspects of the dance and produce a new definition for it. Note
+	that the <a href="#output">resulting definition</a> must be manually copied to
+	a separate file since JavaScript cannot access the local file system.</p>
+<p>The active dancer is shown highlighted in green. The large triangle represents
+	their previous location and orientation, while the small triangle represents
+	their midpoint location and orientation. If there is no midpoint specified,
+	the small triangle overlays the large one.</p>
+<h3 id="dancer">Dancer Panel <a href="#top" class="top">Top</a></h3>
+<p><img src="img/dancePanel.png" alt="Dancer panel" title="Dancer panel" class="right">
+	The dancer panel shows the location and orientation details for a single dancer.
+	Select a dancer by clicking on them in the animation panel - that dancer turns
+	green and their label shows in the top-left of the panel. For each position
+	within the dance, each dancer has an endpoint and an optional midpoint.
+	Select the midpoint by clicking on the midpoint arrow in the animation panel
+	or by selecting the <em>Midpoint</em> radio button in this panel.</p>
+<dl>
+	<dt>Midpoint/Endpoint</dt>
+	<dd>Switch between the midpoint and endpoint for the current dancer.
+		When selecting a new dancer it defaults back to the endpoint.</dd>
+	<dt>X/Y</dt>
+	<dd>Set the x- and y-coordinates of the dancer's midpoint/endpoint.
+		The centre of the animation area is 0,0 with positive x-values
+		moving to the right and positive y-values moving down.</dd>
+	<dt>Clear</dt>
+	<dd>This button only appears when midpoint is selected and
+		clears the midpoint by synchronising it with the endpoint.</dd>
+	<dt>Nudge</dt>
+	<dd>Click the arrows to move the dancer in that direction by the amount
+		specified in the input field. I've found the default value of 25
+		useful as the dancer icons are 100 wide.</dd>
+	<dt>Angle</dt>
+	<dd>Set the angle that the dancer faces at the midpoint/endpoint.
+		This is measured in degrees with 0 facing directly down,
+		90 facing to the left, 180 facing up, and 270 facing to the right.</dd>
+	<dt>Clockwise</dt>
+	<dd>Check the box to have the dancer turn clockwise from their previous
+		position into the new position, or clear it to turn anti-clockwise.</dd>
+	<dt>Turn</dt>
+	<dd>Click the arrows to orient the dancer in that direction.</dd>
+	<dt>All selected positions</dt>
+	<dd>Check this box to apply changes to the same dancer in all positions
+		selected on the <a href="#positions">Positions Tab</a>.
+		This checkbox is only enabled when the current position is one
+		of those selected. Changes only apply to the current position
+		if this box is disabled. Be careful when checking this box
+		as it can make many changes that may be hard to undo.</dd>
+	<dt>Replicate</dt>
+	<dd>Check this box to have positions automatically replicated to other dancers.
+		Use the <em>Config</em> button to <a href="#replication">configure</a>
+		how that replication is done.</dd>
+	<dt>Move</dt>
+	<dd>Click this button to animate just the current dancer from their previous position.</dd>
+</dl>
+<h3 id="replicate">Replicate Dancers Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceReplicate.png" alt="Replicate dancers dialog" title="Replicate dancers dialog" class="right">
+	The <em>Replicate Dancers</em> dialog lets you configure how replication is applied.
+	It should only be used during the first repetition of the dance as it assumes
+	couples are arranged in numeric order.</p>
+<dl>
+	<dt>Replication type</dt>
+	<dd>Select the type of replication.
+		<dl>
+			<dt>Longways set</dt>
+			<dd>Dancers are replicated along the line, i.e. vertically on screen.
+				Spare dancers at the end are ignored.</dd>
+			<dt>Square set</dt>
+			<dd>Dancers are replicated across or around a square set.</dd>
+			<dt>Circle</dt>
+			<dd>Dancers are replicated around the circle.</dd>
+		</dl>
+	</dd>
+	<dt>Dancers offset</dt>
+	<dd>Enter the number of dancers between two replicated positions. For example,
+		in a duple-minor longways set, an offset of <strong>4</strong> would be used
+		since there are four dancers in each minor set. In a square set, use <strong>4</strong>
+		to replicate opposites or <strong>2</strong> to replicate all couples. In a circle,
+		use <strong>4</strong> to replicate every second couple, or <strong>2</strong>
+		to replicate all couples.</dd>
+	<dt>Distance</dt>
+	<dd>Enter the distance by which the replicated dancers are moved in the y-direction (vertically).
+		In the duple-minor longways set this is the distance from the start of one set to the
+		start of the next, typically 250 pixels. This setting only applies to longways sets.</dd>
+</dl>
+<h3 id="coords">Coordinates Panel <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceCoords.png" alt="Coordinates panel" title="Coordinates panel" class="right">
+	The coordinates panel allows you to calculate the coordinates of a location
+	given its angle and distance from the centre. This is very useful for dances
+	that are danced in a circle.</p>
+<dl>
+	<dt>Angle/Dist</dt>
+	<dd>Enter the angle (from 0 facing down, increasing clockwise) and distance
+		of the location from the centre. You may enter a second angle and distance
+		that will be offset from the first one.</dd>
+	<dt>Calculate</dt>
+	<dd>Click this button to calculate the coordinates from the given angle(s) and distance(s).</dd>
+	<dt>Coordinates</dt>
+	<dd>The resulting coordinates. In this example, moving down 100 and
+		then up and left 50 you reach the point -35, 65.</dd>
+</dl>
+<h3 id="dance">Dance Tab <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceTab.png" alt="Dance tab" title="Dance tab" class="right">
+	The <em>Dance</em> tab shows basic information about the dance,
+	and allows a new dance to be started.</p>
+<dl>
+	<dt>New dance</dt>
+	<dd>Click this button to start a new dance. The
+		<a href="#new">resulting dialog</a> is described below.</dd>
+	<dt>Name</dt>
+	<dd>Enter the name of this dance.</dd>
+	<dt>Formation</dt>
+	<dd>Enter the starting formation for this dance. For example,
+		'Duple minor longways set' or 'Four couples in a square set'.</dd>
+	<dt>Music</dt>
+	<dd>Enter the name and/or length and style of music for this dance.</dd>
+	<dt>Source</dt>
+	<dd>Enter the author's name and/or reference a book or Web site where
+		the dance was described.</dd>
+	<dt>Notes</dt>
+	<dd>Enter any additional information about the dance, it's music, or movements.</dd>
+	<dt>Synch music</dt>
+	<dd>Enter the name of the MP4 file that contains the music for this dance.
+		It must reside in the <code>music</code> directory beneath the one containing this page.</dd>
+	<dt>Period/Delay</dt>
+	<dd>Enter the length of each bar (in milliseconds) and the delay (in milliseconds)
+		at the start of the music before beginning the animation.</dd>
+	<dt>Dancers</dt>
+	<dd>This list shows all the dancers depicted in the dance and lets you set
+		their label and whether they are Gents or Ladies.</dd>
+</dl>
+<h3 id="new">Create a New Dance Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceNew.png" alt="New dance dialog" title="New dance dialog" class="right">
+	The <em>Create a New Dance</em> dialog captures basic information about a new dance.
+	When <em>OK</em> is clicked any existing dance definition is deleted.</p>
+<dl>
+	<dt>Name</dt>
+	<dd>Enter the name of the new dance.</dd>
+	<dt>No. of dancers</dt>
+	<dd>Enter the number of dancers required for this dance.
+		For a longways set up to six couples fit within the animation area.</dd>
+	<dt>Formation</dt>
+	<dd>Enter the starting formation for this dance.</dd>
+	<dt>No. of positions</dt>
+	<dd>Enter the initial number of positions. Each position represents one bar of music.
+		Generally it is best to start with only the starting position (0)
+		and <a href="#positions">add</a> new positions incrementally.</dd>
+</dl>
+<h3 id="positions">Positions Tab <a href="#top" class="top">Top</a></h3>
+<p><img src="img/dancePositions.png" alt="Positions tab" title="Positions tab" class="right">
+	The <em>Positions</em> tab shows all of the positions in the dance
+	and lets you manipulate them. Move to a position by clicking on it in this list,
+	or by selecting it from the <a href="#player"><em>Position</em></a> drop-down.</p>
+<dl>
+	<dt>Action: Add</dt>
+	<dd>Choose this action to add new positions to the dance. Enter the number of
+		new positions and the current position to place them after. That current position
+		is duplicated (removing any midpoint information) for the new positions.</dd>
+	<dt>Action: Delete</dt>
+	<dd>Select the positions to be deleted by clicking the checkboxes next to them
+		in the list. You can select a continuous range by clicking on the first one
+		and then holding down the <em>Shift</em> key when clicking on the last.
+		Deletion must be confirmed before it is actioned.</dd>
+	<dt>Action: Copy/Move</dt>
+	<dd>Select the positions to be copied/moved by clicking the checkboxes next to them
+		in the list. You can select a continuous range by clicking on the first one
+		and then holding down the <em>Shift</em> key when clicking on the last.
+		Then select the current position after which the copies are placed.
+		Select any changes to the dancers positions during the copy/move from the
+		list provided. Copying leaves the original positions
+		as they were, while moving deletes the original positions.
+		<dl>
+			<dt>Transpose</dt>
+			<dd><a href="#transpose">Swap dancers' positions</a> around during the copy/move process.</dd>
+			<dt>Progress linearly</dt>
+			<dd><a href="#linear">Progress dancers</a> up or down the floor during the copy/move process.</dd>
+			<dt>Progress 3 in 4</dt>
+			<dd><a href="#3in4">Progress dancers</a> as in a Scottish set during the copy/move process.</dd>
+			<dt>Progress Becket</dt>
+			<dd><a href="#becket">Progress dancers</a> around a Becket set during the copy/move process.</dd>
+			<dt>Flip</dt>
+			<dd><a href="#flip">Flip dancers</a> horizontally or vertically during the copy/move process.</dd>
+			<dt>Rotate</dt>
+			<dd><a href="#rotate">Rotate all the dancers</a> around the centre point during the copy/move process.</dd>
+		</dl>
+	</dd>
+	<dt>Action: Insert</dt>
+	<dd>Insert a file of basic moves into the dance. Select the moves from the drop-down
+		list and the position after which they are added. The list of moves is loaded from
+		the <code>dancesMoves.xml</code> file, which references movement files that are
+		cut-down dance files.</dd>
+	<dt>Call</dt>
+	<dd>Enter the description of the dance movements for this section of the dance.
+		The call applies to the current position and those following it until
+		a new call is entered.</dd>
+</dl>
+<h3 id="transpose">Transpose Dancers Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceTranspose.png" alt="Transpose dialog" title="Transpose dialog" class="right">
+	The <em>Transpose Dancers</em> dialog allows you to map dancers in one or more positions
+	being <a href="#positions">copied/moved</a> onto other dancers in the new positions.
+	For each dancer just select which dancer they should become. Note that all
+	dancers must appear in the final mapping - duplicates are not allowed.</p>
+<p>This can be very useful in a progressive set dance. Once you have animated a single
+	pass through the dance, you can copy the entire set of positions and change who
+	is dancing in which location. For example, if displaying a four couple set and
+	the progression ends with couple 1 moving to the bottom, then the transpose
+	dialog would look like the image shown.</p>
+<h3 id="linear">Linear Progression Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceLinear.png" alt="Linear progression dialog" title="Linear progression dialog" class="right">
+	The <em>Linear Progression</em> dialog lets you move dancers up and down the floor
+	during a <a href="#positions">copy/move</a> to repeat the selected movements
+	at their new positions. Specify the number of dancers per row and the distance
+	that they have moved up/down the floor. A previously idle couple at the end of a
+	longways set will be brought into the dance and a couple that has just reached the
+	top will now remain idle.</p>
+<h3 id="3in4">3 in 4 Progression Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/dance3in4.png" alt="3 in 4 progression dialog" title="3 in 4 progression dialog" class="right">
+	The <em>3 in 4 Progression</em> dialog allows you to repeat a set of steps
+	in a standard Scottish triple-minor dance during a <a href="#positions">copy/move</a>.
+	Specify the distance that the first couple has moved down the floor. They will then
+	dance with the 3rd and 4th couples, while the 2nd couple is idle at the top of the set.</p>
+<h3 id="becket">Becket Progression Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceBecket.png" alt="Becket progression dialog" title="Becket progression dialog" class="right">
+	The <em>Becket Progression</em> dialog lets you move dancers around a set
+	that is in Becket formation during a <a href="#positions">copy/move</a>.
+	Specify the distance progressed and the direction
+	of progression - clockwise (normal) or anticlockwise (reverse).</p>
+<h3 id="flip">Flip Dancers Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceFlip.png" alt="Flip dialog" title="Flip dialog" class="right">
+	The <em>Flip Dancers</em> dialog allows you to mirror dance positions,
+	either horizontally or vertically, during a <a href="#positions">copy/move</a>.
+	Select which direction to use.</p>
+<h3 id="rotate">Rotate Dancers Dialog <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceRotate.png" alt="Rotate dancers dialog" title="Rotate dancers dialog" class="right">
+	The <em>Rotate Dancers</em> dialog lets you rotate the entire set around
+	its centre point during a <a href="#positions">copy/move</a>.
+	This is useful when a square set is lead by each couple in turn,
+	or in a circle dance where couples lead in turn. (You may need to follow the
+	rotation with a copy/transpose combination to swap the new couples into the lead.)
+	Specify the angle of rotation desired, being in degrees clockwise around the set.</p>
+<h3 id="output">Output Tab <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceOutput.png" alt="Output tab" title="Output tab" class="right">
+	The <em>Output</em> tab shows the definition of the dance animation
+	as <a href="http://www.w3.org/standards/xml/core">XML</a>.
+	This text is regenerated whenever you open this tab. Since JavaScript
+	doesn't have access to the native file system, you <strong>must copy</strong>
+	the definition into a separate file and save it manually.</p>
+<ol>
+	<li>Open the <em>Output</em> tab.</li>
+	<li>Click in the output text area.</li>
+	<li>Press <em>Ctrl-A</em> to select the entire contents, then <em>Ctrl-C</em> to copy it.</li>
+	<li>Open your favourite text editor and start a new file.</li>
+	<li>Press <em>Ctrl-V</em> to paste the dance definition.</li>
+	<li>Save the file as <code><em>DanceName</em>.xml</code>.</li>
+</ol>
+<p>Once you have saved the dance definition, don't forget to update the
+	<a href="#player"><code>dances.xml</code></a> file to include a link to that new file.</p>
+<h3 id="config">Config Tab <a href="#top" class="top">Top</a></h3>
+<p><img src="img/danceConfig.png" alt="Config tab" title="Config tab" class="right">
+	The <em>Config</em> tab lets you set some configuration options for the application.</p>
+<dl>
+	<dt>Show grid</dt>
+	<dd>Check this box to show a grid on the animation area, or clear it to hide the grid.</dd>
+	<dt>Period (ms)</dt>
+	<dd>Set the time interval (milliseconds) for animating one step of the dance.</dd>
+	<dt>Floor size</dt>
+	<dd>Set the size of the dance floor (animation area). This value is the
+		number of pixels (height and width) to be shown. The actual animation
+		area doesn't resize, but its contents do. Thus a larger number makes
+		the dancers smaller. The default of 800 is suitable for most dances.</dd>
+</dl>
+<h2 id="tips">Tips and Tricks <a href="#top" class="top">Top</a></h2>
+<ul>
+	<li>Use a basic <a href="#dancer">nudge factor</a> of 25 as this fits
+		well with the dancer icon size (100).</li>
+	<li>Animate in small chunks, <a href="#positions">adding</a>
+		two or four positions at a time.</li>
+	<li>Use the replication abilities to animate the other dancers.</li>
+	<li>For progressive longways sets, show four or five couples so that the
+		progression can be seen.</li>
+	<li>Generate the dance <a href="#output">output</a> and save it on a regular
+		basis (every eight bars perhaps).</li>
+</ul>
+<h2>Contact</h2>
+<p>For questions or problems contact Keith Wood (wood.keith{at}optusnet.com.au).</p>
+</body>
+</html>

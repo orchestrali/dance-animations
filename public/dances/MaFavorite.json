@@ -1,0 +1,3129 @@
+{
+  "title": "Ma Favorite",
+  "author": [],
+  "type": "square",
+  "formation": "square",
+  "music": "Ma Favorite",
+  "source": "Sieur de la Cuisse, Le Répertoire des Bals, Feuille 17\nhttps://www.loc.gov/resource/musdi.213.0/?sp=91.",
+  "notes": "Many figures of this dance end with a rigaudon, which involves doing footwork in place. I have substituted arm movements or balances so that these are visible. In the 'calls' displayed below, I have used modern terminology such as 'heads' and 'sides' for the opposite pairs of couples, and 'larks' and 'robins' in place of 'gents' and 'ladies' (or 'cavaliers' and 'dames').",
+  "roles": [
+      {
+        "x": 65,
+        "y": 0,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head one lark firstcorner"
+      },
+      {
+        "x": -65,
+        "y": 0,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head one robin second"
+      },
+      {
+        "x": -175,
+        "y": 110,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side two lark second"
+      },
+      {
+        "x": -175,
+        "y": 240,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side two robin third"
+      },
+      {
+        "x": -65,
+        "y": 350,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head three lark third"
+      },
+      {
+        "x": 65,
+        "y": 350,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head three robin fourth"
+      },
+      {
+        "x": 175,
+        "y": 240,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side four lark fourth"
+      },
+      {
+        "x": 175,
+        "y": 110,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side four robin firstcorner"
+      }
+    ],
+  "sequence": [
+    {
+      "time": 17.0,
+      "part": "I.",
+      "call": "Heads advance while sides go out to corners, then rigaudon",
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 0,
+            "y": 110,
+            "dur": 3.0
+          },
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 0,
+            "y": 110,
+            "dur": 3.0
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": 0,
+            "y": -110,
+            "dur": 3.0
+          }
+        ]
+        
+      ]
+    },
+    {
+      "time": 20.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-65",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 21.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 22.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-115",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 23.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 24.4,
+      "seq": [
+        [
+          {
+            "who": "head lark",
+            "type": "rotate",
+            "da": -90,
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "rotate",
+            "da": 90,
+            "dur": 0.6
+          },
+          {
+            "who": "head lark",
+            "type": "arms",
+            "rangle": "-70",
+            "langle": "-45",
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-110",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 25.0,
+      "part": "II.",
+      "call": "Head larks take opposite robin home while sides return to place",
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 110,
+            "y": 0,
+            "dur": 1.4
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": 0,
+            "y": 110,
+            "dur": 3.0
+          },
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 0,
+            "y": -110,
+            "dur": 3.0
+          }
+        ]
+        
+      ]
+    },
+    {
+      "time": 26.4,
+      "seq": [
+        [
+          {
+            "who": "head lark",
+            "type": "path",
+            "path": "a110 80 0 1 0",
+            "dx": [-110],
+            "dy": [-110],
+            "dur": 5.6
+          },
+          {
+            "who": "head robin",
+            "type": "path",
+            "path": "a240 210 0 1 0",
+            "dx": [-240],
+            "dy": [-240],
+            "dur": 5.6
+          },
+          {
+            "who": "head",
+            "type": "rotate",
+            "da": -270,
+            "dur": 5.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 28.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "arms",
+            "rangle": "-65",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 29.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 30.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-115",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 31.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 32.4,
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 33.0,
+      "part": "III.",
+      "call": "Sides advance while heads go out to corners, then rigaudon",
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": 110,
+            "y": 0,
+            "dur": 3.0
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": 110,
+            "y": 0,
+            "dur": 3.0
+          },
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": -110,
+            "y": 0,
+            "dur": 3.0
+          }
+        ]
+        
+      ]
+    },
+    {
+      "time": 36.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-65",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 37.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 38.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-115",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 39.4,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 40.4,
+      "seq": [
+        [
+          {
+            "who": "side lark",
+            "type": "rotate",
+            "da": -90,
+            "dur": 0.6
+          },
+          {
+            "who": "side robin",
+            "type": "rotate",
+            "da": 90,
+            "dur": 0.6
+          },
+          {
+            "who": "side lark",
+            "type": "arms",
+            "rangle": "-70",
+            "langle": "-45",
+            "dur": 0.6
+          },
+          {
+            "who": "side robin",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-110",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 41.0,
+      "part": "IV.",
+      "call": "Side larks take opposite robin home while heads return to place",
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": 0,
+            "y": 110,
+            "dur": 1.4
+          },
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": 110,
+            "y": 0,
+            "dur": 3.0
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": -110,
+            "y": 0,
+            "dur": 3.0
+          }
+        ]
+        
+      ]
+    },
+    {
+      "time": 42.4,
+      "seq": [
+        [
+          {
+            "who": "side lark",
+            "type": "path",
+            "path": "a80 110 0 1 0",
+            "dx": [-110],
+            "dy": [-110],
+            "dur": 5.6
+          },
+          {
+            "who": "side robin",
+            "type": "path",
+            "path": "a210 240 0 1 0",
+            "dx": [-240],
+            "dy": [-240],
+            "dur": 5.6
+          },
+          {
+            "who": "side",
+            "type": "rotate",
+            "da": -270,
+            "dur": 5.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 44.4,
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "arms",
+            "rangle": "-65",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 45.4,
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 46.4,
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-115",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 47.4,
+      "seq": [
+        [
+          {
+            "who": "head",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 48.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 49.0,
+      "part": "V.",
+      "call": "Form a double moulinet, then rigaudon",
+      "seq": [
+        [
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 103,
+            "y": -32,
+            "dur": 3.0
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": -32,
+            "y": 103,
+            "dur": 3.0
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": -41,
+            "y": 32,
+            "dur": 3.0
+          },
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": 32,
+            "y": -41,
+            "dur": 3.0
+          },
+          {
+            "who": "robin",
+            "type": "rotate",
+            "da": -90,
+            "dur": 3.0
+          },
+          {
+            "who": "lark",
+            "type": "rotate",
+            "da": 90,
+            "dur": 3.0
+          },
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-125",
+            "dur": 3.0
+          }
+        ]
+      ]
+    },
+    {
+      "time": 52.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": 10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 0,
+            "y": 10,
+            "dur": 0.6
+          },
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-67",
+            "langle": "-137",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 53.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": -10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 0,
+            "y": -10,
+            "dur": 0.6
+          },
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-125",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 54.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": -10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 0,
+            "y": -10,
+            "dur": 0.6
+          },
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-43",
+            "langle": "-113",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 55.4,
+      "seq": [
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": 10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 0,
+            "y": 10,
+            "dur": 0.6
+          },
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-125",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 56.4,
+      "part": "VI.",
+      "call": "Robins turn their moulinet halfway, then courtesy turn with their partner",
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 57.0,
+      "seq": [
+        [
+          {
+            "who": "side robin",
+            "type": "path",
+            "path": "a79 79 0 1 1",
+            "dx": [144],
+            "dy": [66],
+            "dur": 3.0
+          },
+          {
+            "who": "head robin",
+            "type": "path",
+            "path": "a79 79 0 1 1",
+            "dx": [66],
+            "dy": [144],
+            "dur": 3.0
+          },
+          {
+            "who": "robin",
+            "type": "rotate",
+            "da": 180,
+            "dur": 3.0
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": 0,
+            "y": 132,
+            "dur": 2.0
+          },
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": 132,
+            "y": 0,
+            "dur": 2.0
+          },
+          {
+            "who": "lark",
+            "type": "rotate",
+            "da": -90,
+            "dur": 2.0
+          }
+        ]
+      ]
+    },
+    {
+      "time": 59.0,
+      "seq": [
+        [
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": 78,
+            "y": -39,
+            "dur": 1.0
+          },
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": -39,
+            "y": 78,
+            "dur": 1.0
+          },
+          {
+            "who": "lark",
+            "type": "rotate",
+            "da": -90,
+            "dur": 1.0
+          },
+          {
+            "who": "lark",
+            "type": "arms",
+            "rangle": "-5",
+            "langle": "-60",
+            "dur": 1.0
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-165",
+            "dur": 1.0
+          }
+        ],
+        [
+          {
+            "who": "side",
+            "type": "translate",
+            "x": -33,
+            "y": 46.5,
+            "dur": 1.0
+          },
+          {
+            "who": "head",
+            "type": "translate",
+            "x": 46.5,
+            "y": -33,
+            "dur": 1.0
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-165",
+            "dur": 1.0
+          }
+        ],
+        [
+          {
+            "who": "side robin",
+            "type": "path",
+            "path": "a69 69 0 1 0",
+            "dx": [-39],
+            "dy": [-93],
+            "dur": 3.0
+          },
+          {
+            "who": "head robin",
+            "type": "path",
+            "path": "a69 69 0 1 0",
+            "dx": [-93],
+            "dy": [-39],
+            "dur": 3.0
+          },
+          {
+            "who": "all",
+            "type": "rotate",
+            "da": -270,
+            "dur": 3.0
+          }
+        ]
+      ]
+      
+    },
+    {
+      "time": 64.4,
+      "seq": [
+        [
+          {
+            "who": "lark",
+            "type": "arms",
+            "rangle": "-35",
+            "langle": "-140",
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": -7.75,
+            "y": 12,
+            "dur": 0.6
+          },
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 12,
+            "y": -7.75,
+            "dur": 0.6
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-125",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 65.0,
+      "part": "VII.",
+      "call": "Robins form a moulinet again with larks connected to their partner and the robin to their left, then rigaudon",
+      "seq": [
+        [
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": -38.75,
+            "y": 60,
+            "dur": 3.0
+          },
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 60,
+            "y": -38.75,
+            "dur": 3.0
+          },
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": -100,
+            "y": 47,
+            "dur": 3.0
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": 47,
+            "y": -100,
+            "dur": 3.0
+          },
+          {
+            "who": "robin",
+            "type": "rotate",
+            "da": -90,
+            "dur": 3.0
+          },
+          {
+            "who": "lark",
+            "type": "rotate",
+            "da": 45,
+            "dur": 3.0
+          },
+          
+          {
+            "who": "lark",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-140",
+            "dur": 1.0
+          }
+        ]
+      ]
+    },
+    {
+      "time": 67.0,
+      "seq": [
+        [
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-125",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 68.4,
+      "seq": [
+        [
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": 0,
+            "y": 10,
+            "dur": 0.6
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-67",
+            "langle": "-137",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 69.4,
+      "seq": [
+        [
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": -10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": 0,
+            "y": -10,
+            "dur": 0.6
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-125",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 70.4,
+      "seq": [
+        [
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": -10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": 0,
+            "y": -10,
+            "dur": 0.6
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-43",
+            "langle": "-113",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 71.4,
+      "seq": [
+        [
+          {
+            "who": "side robin",
+            "type": "translate",
+            "x": 10,
+            "y": 0,
+            "dur": 0.6
+          },
+          {
+            "who": "head robin",
+            "type": "translate",
+            "x": 0,
+            "y": 10,
+            "dur": 0.6
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-55",
+            "langle": "-125",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 72.4,
+      "seq": [
+        [
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "-135",
+            "langle": "-125",
+            "dur": 0.6
+          },
+          {
+            "type": "path",
+            "who": "head lark",
+            "path": "a50 50 0 1 0",
+            "dx": [85],
+            "dy": [-52],
+            "dur": 1.6
+          },
+          
+          {
+            "type": "path",
+            "who": "side lark",
+            "path": "a50 50 0 1 0",
+            "dx": [52],
+            "dy": [85],
+            "dur": 1.6
+          },
+          {
+            "type": "rotate",
+            "who": "lark",
+            "da": -225,
+            "dur": 1.6
+          },
+          {
+            "type": "arms",
+            "who": "lark",
+            "rangle": "147",
+            "langle": "-140",
+            "dur": 1.6
+          }
+          
+        ],
+        [
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": 115,
+            "y": 0,
+            "dur": 1.6
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": 0,
+            "y": 115,
+            "dur": 1.6
+          },
+          {
+            "type": "path",
+            "who": "head robin",
+            "path": "a60 80 0 0 1",
+            "dx": [60],
+            "dy": [-80],
+            "dur": 1.6
+          },
+          {
+            "type": "path",
+            "who": "side robin",
+            "path": "a80 60 0 0 1",
+            "dx": [-80],
+            "dy": [60],
+            "dur": 1.6
+          },
+          {
+            "who": "robin",
+            "type": "rotate",
+            "da": 90,
+            "dur": 1.6
+          },
+          {
+            "who": "robin",
+            "type": "arms",
+            "rangle": "41",
+            "langle": "-125",
+            "dur": 1.0
+          }
+          
+        ]
+      ]
+    },
+    {
+      "time": 73.0,
+      "part": "VIII.",
+      "call": "Parners allemande back into place"
+    },
+    {
+      "time": 75.0,
+      "seq": [
+        [
+          {
+            "who": "all",
+            "type": "arms",
+            "rangle": "147",
+            "langle": "-175",
+            "dur": 0.6
+          }
+        ],
+        [
+          {
+            "type": "path",
+            "who": "head",
+            "path": "a45 45 0 1 0",
+            "dx": [-89],
+            "dy": [-24],
+            "dur": 2
+          },
+          {
+            "type": "path",
+            "who": "side",
+            "path": "a45 45 0 1 0",
+            "dx": [-24],
+            "dy": [-89],
+            "dur": 2
+          },
+          {
+            "type": "rotate",
+            "who": "all",
+            "da": -180,
+            "dur": 2
+          }
+        ],
+        [
+          {
+            "type": "path",
+            "who": "head",
+            "path": "a45 45 0 0 0",
+            "dx": [-55],
+            "dy": [35],
+            "dur": 1,
+            "time": 61.6
+          },
+          {
+            "type": "path",
+            "who": "side",
+            "path": "a45 45 0 0 0",
+            "dx": [35],
+            "dy": [-55],
+            "dur": 1
+          },
+          {
+            "who": "all",
+            "type": "rotate",
+            "da": -90,
+            "dur": 1
+          }
+        ],
+        [
+          {
+            "time": 62.6,
+            "type": "path",
+            "who": "head robin",
+            "path": "a126 78 0 0 0",
+            "dx": [126],
+            "dy": [-36],
+            "dur": 1.4
+          },
+          {
+            "time": 62.6,
+            "type": "path",
+            "who": "side robin",
+            "path": "a78 126 0 0 0",
+            "dx": [-36],
+            "dy": [126],
+            "dur": 1.4
+          },
+          {
+            "time": 62.6,
+            "type": "rotate",
+            "who": "robin",
+            "da": -90,
+            "dur": 1.4
+          },
+          {
+            "time": 62.6,
+            "type": "arms",
+            "who": "robin",
+            "rangle": "-135",
+            "langle": "-110",
+            "dur": 1.4
+          },
+          
+          {
+            "time": 62.6,
+            "type": "arms",
+            "who": "lark",
+            "rangle": "97",
+            "langle": "-45",
+            "dur": 0.8
+          },
+          {
+            "time": 62.6,
+            "type": "rotate",
+            "who": "lark",
+            "da": 90,
+            "dur": 0.8
+          }
+        ]
+      ]
+    },
+    {
+      "time": 79.4,
+      "seq": [
+        [
+          {
+            "who": "head lark",
+            "type": "translate",
+            "x": 17.5,
+            "y": -58,
+            "dur": 0.6
+          },
+          {
+            "who": "side lark",
+            "type": "translate",
+            "x": -58,
+            "y": 17.5,
+            "dur": 0.6
+          },
+          {
+            "who": "lark",
+            "type": "arms",
+            "rangle": "-70",
+            "langle": "-45",
+            "dur": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "time": 80.0,
+      "repeat": true
+    }
+  ],
+  "verses": [
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 1.0,
+        "part": "verse 1",
+        "call": "Le grand rond",
+        "seq": [
+          [
+            {
+              "who": "head",
+              "type": "translate",
+              "x": 0,
+              "y": 18,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": 18,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 22.5,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -22.5,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-85",
+              "langle": "-95",
+              "dur": 1
+            }
+          ]
+        ]
+      },
+      {
+        "time": 2.5,
+        "seq": [
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [-130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [-314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 5.5
+            }
+          ]
+        ]
+      },
+      {
+        "time": 9.0,
+        "seq": [
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [-130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [-314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 5.5
+            }
+          ],
+          [
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -22.5,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 22.5,
+              "dur": 1
+            },
+            {
+              "who": "head",
+              "type": "translate",
+              "x": 0,
+              "y": -18,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": -18,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.5,
+        "part": "verse 2",
+        "call": "La Main",
+        "seq": [
+          [
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": 0,
+              "y": 32.5,
+              "dur": 1
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 32.5,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": 0,
+              "y": -32.5,
+              "dur": 1
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": -32.5,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -180,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-60",
+              "langle": "-45",
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 1",
+              "dx": [130],
+              "dy": [65],
+              "dur": 3.25
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 1",
+              "dx": [65],
+              "dy": [130],
+              "dur": 3.25
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.25
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 1",
+              "dx": [130],
+              "dy": [65],
+              "dur": 3.25
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 1",
+              "dx": [65],
+              "dy": [130],
+              "dur": 3.25
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.25
+            }
+          ]
+        ]
+      },
+      {
+        "time": 8.2,
+        "seq": [
+          [
+            {
+              "who": "head",
+              "type": "translate",
+              "x": 32.5,
+              "y": -32.5,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": -32.5,
+              "y": 32.5,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 90,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-120",
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 0",
+              "dx": [-130],
+              "dy": [65],
+              "dur": 2.9
+            },
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 0",
+              "dx": [65],
+              "dy": [-130],
+              "dur": 2.9
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 2.9
+            }
+          ],
+          [
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 0",
+              "dx": [-130],
+              "dy": [65],
+              "dur": 2.9
+            },
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a72.67 72.67 0 1 0",
+              "dx": [65],
+              "dy": [-130],
+              "dur": 2.9
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 2.9
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "translate",
+              "x": -32.5,
+              "y": -65,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": -65,
+              "y": -32.5,
+              "dur": 1
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 90,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.5,
+        "part": "verse 3",
+        "call": "Le deux mains",
+        "seq": [
+          [
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": 25,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": -25,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": 0,
+              "y": 25,
+              "dur": 1
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 0,
+              "y": -25,
+              "dur": 1
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 90,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-90",
+              "langle": "-90",
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a40 40 0 1 0",
+              "dx": [80],
+              "dy": [0],
+              "dur": 3.25
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a40 40 0 1 0",
+              "dx": [0],
+              "dy": [80],
+              "dur": 3.25
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3.25
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a40 40 0 1 0",
+              "dx": [80],
+              "dy": [0],
+              "dur": 3.25
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a40 40 0 1 0",
+              "dx": [0],
+              "dy": [80],
+              "dur": 3.25
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3.25
+            }
+          ]
+        ]
+      },
+      {
+        "time": 8.5,
+        "seq": [
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a40 40 0 1 1",
+              "dx": [80],
+              "dy": [0],
+              "dur": 3.25
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a40 40 0 1 1",
+              "dx": [0],
+              "dy": [80],
+              "dur": 3.25
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.25
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a40 40 0 1 1",
+              "dx": [80],
+              "dy": [0],
+              "dur": 3.25
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a40 40 0 1 1",
+              "dx": [0],
+              "dy": [80],
+              "dur": 3.25
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.25
+            }
+          ],
+          [
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 90,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1
+            },
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": -25,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": 25,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": 0,
+              "y": -25,
+              "dur": 1
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 0,
+              "y": 25,
+              "dur": 1
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.5,
+        "part": "verse 4",
+        "call": "Moulinet des dames",
+        "seq": [
+          [
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 0.5
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 103,
+              "y": -32,
+              "dur": 1.5
+            },
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": -32,
+              "y": 103,
+              "dur": 1.5
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1.5
+            },
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-55",
+              "langle": "-45",
+              "dur": 1.0
+            }
+          ],
+          [
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [144],
+              "dy": [66],
+              "dur": 3.0
+            },
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [66],
+              "dy": [144],
+              "dur": 3.0
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.0
+            }
+          ],
+          [
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [144],
+              "dy": [66],
+              "dur": 3.0
+            },
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [66],
+              "dy": [144],
+              "dur": 3.0
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.0
+            }
+          ]
+        ]
+      },
+      {
+        "time": 8.2,
+        "seq": [
+          [
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-125",
+              "dur": 0.5
+            },
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": 66,
+              "y": 0,
+              "dur": 1.0
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 0,
+              "y": 66,
+              "dur": 1.0
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 180,
+              "dur": 1.0
+            }
+          ],
+          [
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [-144],
+              "dy": [66],
+              "dur": 2.65
+            },
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [66],
+              "dy": [-144],
+              "dur": 2.65
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -180,
+              "dur": 2.65
+            }
+          ],
+          [
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [-144],
+              "dy": [66],
+              "dur": 2.65
+            },
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [66],
+              "dy": [-144],
+              "dur": 2.65
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -180,
+              "dur": 2.65
+            }
+          ],
+          [
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": 98,
+              "y": 103,
+              "dur": 1.5
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 103,
+              "y": 98,
+              "dur": 1.5
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1.5
+            },
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.5,
+        "part": "verse 5",
+        "call": "Moulinet des Cavaliers",
+        "seq": [
+          [
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 0.5
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": 103,
+              "y": 98,
+              "dur": 1.5
+            },
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": 98,
+              "y": 103,
+              "dur": 1.5
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1.5
+            },
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-55",
+              "langle": "-45",
+              "dur": 1.0
+            }
+          ],
+          [
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [144],
+              "dy": [66],
+              "dur": 3.0
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [66],
+              "dy": [144],
+              "dur": 3.0
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.0
+            }
+          ],
+          [
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [144],
+              "dy": [66],
+              "dur": 3.0
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a79 79 0 1 1",
+              "dx": [66],
+              "dy": [144],
+              "dur": 3.0
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3.0
+            }
+          ]
+        ]
+      },
+      {
+        "time": 8.2,
+        "seq": [
+          [
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-125",
+              "dur": 0.5
+            },
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": 66,
+              "y": 0,
+              "dur": 1.0
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": 0,
+              "y": 66,
+              "dur": 1.0
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 180,
+              "dur": 1.0
+            }
+          ],
+          [
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [-144],
+              "dy": [66],
+              "dur": 2.65
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [66],
+              "dy": [-144],
+              "dur": 2.65
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -180,
+              "dur": 2.65
+            }
+          ],
+          [
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [-144],
+              "dy": [66],
+              "dur": 2.65
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a79 79 0 1 0",
+              "dx": [66],
+              "dy": [-144],
+              "dur": 2.65
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -180,
+              "dur": 2.65
+            }
+          ],
+          [
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": -32,
+              "y": 103,
+              "dur": 1.5
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": 103,
+              "y": -32,
+              "dur": 1.5
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -90,
+              "dur": 1.5
+            },
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.5,
+        "part": "verse 6",
+        "call": "Rond des dames",
+        "seq": [
+          [
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 0.5
+            },
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": -65,
+              "y": 85,
+              "dur": 1.5
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": 85,
+              "y": -65,
+              "dur": 1.5
+            },
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-95",
+              "langle": "-85",
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3
+            }
+          ]
+        ]
+      },
+      {
+        "time": 8.5,
+        "seq": [
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head robin",
+              "type": "translate",
+              "x": 65,
+              "y": -85,
+              "dur": 1.5
+            },
+            {
+              "who": "side robin",
+              "type": "translate",
+              "x": -85,
+              "y": 65,
+              "dur": 1.5
+            },
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1.0
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.5,
+        "part": "verse 7",
+        "call": "Rond des cavaliers",
+        "seq": [
+          [
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 0.5
+            },
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": 65,
+              "y": 85,
+              "dur": 1.5
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": 85,
+              "y": 65,
+              "dur": 1.5
+            },
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-95",
+              "langle": "-85",
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a90 90 0 1 0",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3
+            }
+          ]
+        ]
+      },
+      {
+        "time": 8.5,
+        "seq": [
+          [
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [0],
+              "dy": [180],
+              "dur": 3
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a90 90 0 1 1",
+              "dx": [180],
+              "dy": [0],
+              "dur": 3
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head lark",
+              "type": "translate",
+              "x": -65,
+              "y": -85,
+              "dur": 1.5
+            },
+            {
+              "who": "side lark",
+              "type": "translate",
+              "x": -85,
+              "y": -65,
+              "dur": 1.5
+            },
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1.0
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 0.1,
+        "seq": [
+          [
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 0.3
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -180,
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a77 45 0 0 1",
+              "dx": [77],
+              "dy": [45],
+              "dur": 0.98
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a45 77 0 0 1",
+              "dx": [45],
+              "dy": [77],
+              "dur": 0.98
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 90,
+              "dur": 0.98
+            },
+            {
+              "who": "robin",
+              "type": "arms",
+              "rangle": "-5",
+              "langle": "-327",
+              "dur": 0.98
+            }
+          ]
+        ]
+      },
+      {
+        "time": 0.5,
+        "part": "verse 8",
+        "call": "l'Allemande",
+        "seq": [
+          [
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a77 45 0 0 1",
+              "dx": [77],
+              "dy": [45],
+              "dur": 1.6
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a45 77 0 0 1",
+              "dx": [45],
+              "dy": [77],
+              "dur": 1.6
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 90,
+              "dur": 1.6
+            },
+            {
+              "who": "lark",
+              "type": "arms",
+              "rangle": "-5",
+              "langle": "-327",
+              "dur": 1.6
+            }
+            
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a45 45 0 1 1",
+              "dx": [-24],
+              "dy": [89],
+              "dur": 3
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a45 45 0 1 1",
+              "dx": [89],
+              "dy": [-24],
+              "dur": 3
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a45 45 0 1 1",
+              "dx": [-24],
+              "dy": [89],
+              "dur": 3
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a45 45 0 1 1",
+              "dx": [89],
+              "dy": [-24],
+              "dur": 3
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "translate",
+              "x": -24,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": 0,
+              "y": -24,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "147",
+              "langle": "-175",
+              "dur": 1
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a45 45 0 1 0",
+              "dx": [-24],
+              "dy": [-89],
+              "dur": 3
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a45 45 0 1 0",
+              "dx": [-89],
+              "dy": [-24],
+              "dur": 3
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "head",
+              "type": "path",
+              "path": "a45 45 0 1 0",
+              "dx": [-24],
+              "dy": [-89],
+              "dur": 3
+            },
+            {
+              "who": "side",
+              "type": "path",
+              "path": "a45 45 0 1 0",
+              "dx": [-89],
+              "dy": [-24],
+              "dur": 3
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 3
+            }
+          ],
+          [
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 0.8
+            },
+            {
+              "who": "head",
+              "type": "translate",
+              "x": 53,
+              "y": -45,
+              "dur": 0.9
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": -45,
+              "y": 53,
+              "dur": 0.9
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 90,
+              "dur": 0.9
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -90,
+              "dur": 0.9
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "time": 0.0
+      },
+      {
+        "time": 1.0,
+        "part": "verse 9",
+        "call": "Le grand rond",
+        "seq": [
+          [
+            {
+              "who": "head",
+              "type": "translate",
+              "x": 0,
+              "y": 18,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": 18,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": 22.5,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": -22.5,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-85",
+              "langle": "-95",
+              "dur": 1
+            }
+          ]
+        ]
+      },
+      {
+        "time": 2.5,
+        "seq": [
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [-130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [-314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a170 170 0 1 0",
+              "dx": [314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": -180,
+              "dur": 5.5
+            }
+          ]
+        ]
+      },
+      {
+        "time": 9.0,
+        "seq": [
+          [
+            {
+              "who": "head robin",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [-130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "head lark",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [130],
+              "dy": [314],
+              "dur": 5.5
+            },
+            {
+              "who": "side lark",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [-314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "side robin",
+              "type": "path",
+              "path": "a170 170 0 1 1",
+              "dx": [314],
+              "dy": [130],
+              "dur": 5.5
+            },
+            {
+              "who": "all",
+              "type": "rotate",
+              "da": 180,
+              "dur": 5.5
+            }
+          ],
+          [
+            {
+              "who": "lark",
+              "type": "rotate",
+              "da": -22.5,
+              "dur": 1
+            },
+            {
+              "who": "robin",
+              "type": "rotate",
+              "da": 22.5,
+              "dur": 1
+            },
+            {
+              "who": "head",
+              "type": "translate",
+              "x": 0,
+              "y": -18,
+              "dur": 1
+            },
+            {
+              "who": "side",
+              "type": "translate",
+              "x": -18,
+              "y": 0,
+              "dur": 1
+            },
+            {
+              "who": "all",
+              "type": "arms",
+              "rangle": "-135",
+              "langle": "-45",
+              "dur": 1
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

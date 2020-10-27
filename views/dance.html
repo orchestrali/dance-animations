@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Dance Display</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/south-street/theme.min.css"
+    />
+    <link rel="stylesheet" href="css/jquery.svg.css" />
+    <style>
+      body,
+      input,
+      select,
+      textarea {
+        font-family: Verdana, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      p label {
+        display: inline-block;
+        width: 6em;
+        margin-right: 1em;
+        font-style: italic;
+        vertical-align: top;
+      }
+      p label.radioLabel {
+        margin: 0em;
+        vertical-align: middle;
+      }
+      p label.radioLabel input {
+        margin: 0em;
+      }
+      tr {
+        vertical-align: top;
+      }
+      .hide {
+        display: none;
+      }
+      .clearfix {
+        clear: both;
+        height: 0em;
+      }
+      #pluginReqd {
+        display: none;
+      }
+      #svgdance {
+        float: left;
+        width: 600px;
+        height: 600px;
+        border: 1px solid #484;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
+      .multiline {
+        padding-left: 7em;
+        text-indent: -7em;
+      }
+      .multiline label {
+        float: left;
+      }
+      .multiline span {
+        display: block;
+      }
+      #withMusic {
+        position: relative;
+        top: 2px;
+      }
+      label[for="withMusic"] {
+        position: relative;
+        top: 4px;
+        font-style: normal;
+      }
+      #panels {
+        float: left;
+      }
+      #designPanel,
+      #anglePanel {
+        display: none;
+        margin: 0em 0em 1em 2em;
+        padding: 0em 1em;
+        background-color: #ccffcc;
+        border: 1px solid #008800;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
+      .buttonRow {
+        margin: 0em;
+      }
+      .note {
+        font-size: 80%;
+      }
+      #curDancer {
+        font-style: normal;
+        font-weight: bold;
+      }
+      img.nudge,
+      img.rotate {
+        margin: 2px;
+      }
+      #nudgeAmount {
+        position: relative;
+        top: -6px;
+      }
+      #replicateConfig {
+        margin-left: 2em;
+      }
+      span.filler {
+        display: inline-block;
+        width: 16px;
+        margin: 2px;
+      }
+      #designArea {
+        display: none;
+      }
+      #editName,
+      #editFormation,
+      #editMusic,
+      #editSource,
+      #editNotes,
+      #editSynchMusic,
+      #editSynchAttribution,
+      #editCall {
+        width: 60em;
+      }
+      .dancerLabel {
+        width: 6em;
+      }
+      #actionTranspose {
+        width: auto;
+        font-style: normal;
+      }
+      #editPositions td {
+        padding: 0em 1em;
+      }
+      #editPositions .position,
+      #editPositions .positionCheck {
+        text-align: center;
+      }
+      .current {
+        background-color: #ccffcc;
+        fill: #ccffcc;
+        stroke: #008800;
+      }
+      #editOutput textarea,
+      #editCallSheet textarea {
+        width: 100%;
+        height: 40em;
+      }
+      #barPeriod {
+        width: 4em;
+      }
+      #dialogUnderlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: #000;
+        opacity: 0.2;
+      }
+      .dialog {
+        padding: 1em;
+        z-index: 20;
+        background-color: #fff;
+        border: 2px solid #008800;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
+      #newName {
+        width: 40em;
+      }
+      #callSheetPrint {
+        display: none;
+      }
+      #callSheetDialog {
+        height: 100%;
+        overflow: scroll;
+      }
+      #callSheetOutput p,
+      #callSheetOutput2 p {
+        padding-left: 7.5em;
+      }
+      #callSheetOutput label,
+      #callSheetOutput2 label {
+        position: absolute;
+        left: 1em;
+      }
+      .callSheet td {
+        padding: 0.25em 0em;
+      }
+      #rotateDialog label {
+        width: 3em;
+      }
+      #rotateDialog label[for] {
+        width: 9em;
+      }
+      td.bars {
+        width: 7em;
+        text-align: center;
+      }
+      span.left {
+        display: inline-block;
+        width: 45%;
+        margin-right: 0.25em;
+        text-align: right;
+      }
+      .tabs-nav a {
+        color: #277a53;
+      }
+      .tabs-nav a,
+      .tabs-nav a span {
+        background: url(
+            https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2Ftab-green.png
+          )no-repeat;
+      }
+      .tabs-nav a {
+        background-position: 100% -100px;
+      }
+      .ui-widget input,
+      .ui-widget select,
+      .ui-widget textarea,
+      .ui-widget button,
+      .ui-widget {
+        font-family: Verdana, Helvetica, sans-serif;
+        font-size: 100%;
+      }
+
+      @media print {
+        body {
+          padding: 0em;
+          border: none;
+        }
+        body > * {
+          display: none;
+        }
+        #callSheetDialog {
+          height: 0px;
+          padding: 0px;
+          border: none;
+        }
+        #callSheetPrint {
+          display: block;
+        }
+        #dialogUnderlay {
+          background-color: transparent;
+        }
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.centre.js"></script>
+    <script src="js/jquery.svg.js"></script>
+    <script src="js/jquery.svganim.js"></script>
+    <script src="js/jquery.svgdom.js"></script>
+    <script src="js/dance.js"></script>
+  </head>
+  <body>
+    <h1>Dance Animations</h1>
+    <noscript><h2>This application requires JavaScript to function</h2></noscript>
+    <h2 id="pluginReqd">
+      This application requires a
+      <a href="http://www.adobe.com/svg/viewer/install/main.html">SVG plugin</a>
+      in IE
+    </h2>
+
+    <p>
+      Choose a category:
+      <select id="type">
+        <option value="">All</option>
+      </select>
+      and
+      <select id="type2">
+        <option value="">All</option>
+      </select>
+    </p>
+    <p>
+      Search for a dance: <input type="text" id="search" />
+      <span class="note">(in the list below)</span>
+    </p>
+    <p>
+      Choose a dance:
+      <select id="dance">
+        <option value="">Select a dance</option>
+      </select>
+      <img
+        id="wait"
+        src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2Fwait.gif"
+        alt="Waiting..."
+      />
+    </p>
+
+    <h2 id="name"></h2>
+    <p class="multiline">
+      <label>Formation:</label><span id="formation">&#160;</span>
+    </p>
+    <p class="multiline"><label>Music:</label><span id="music">&#160;</span></p>
+    <p class="multiline">
+      <label>Source:</label><span id="source">&#160;</span>
+    </p>
+    <p class="multiline"><label>Notes:</label><span id="notes">&#160;</span></p>
+    <div id="svgdance"></div>
+    <div id="panels">
+      <div id="designPanel">
+        <p>
+          <label id="curDancer"></label>
+          <label class="radioLabel"
+            ><input type="radio" name="point" id="editMidpoint" />
+            Midpoint</label
+          >
+          <label class="radioLabel"
+            ><input type="radio" name="point" id="editEndpoint" checked />
+            Endpoint</label
+          >
+        </p>
+        <p>
+          <label for="editX">X/Y:</label
+          ><input id="editX" size="5" maxlength="5" />,
+          <input id="editY" size="5" maxlength="5" />
+          <button type="button" id="clearMidpoint">Clear</button>
+        </p>
+        <p class="buttonRow">
+          <label>Nudge:</label>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowNW.gif"
+            alt="Up-left"
+            class="nudge"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowN.gif"
+            alt="Up"
+            class="nudge"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowNE.gif"
+            alt="Up-right"
+            class="nudge"
+          />
+        </p>
+        <p class="buttonRow">
+          <label>&nbsp;</label>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowW.gif"
+            alt="Left"
+            class="nudge"
+          />
+          <span class="filler">&nbsp;</span>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowE.gif"
+            alt="Right"
+            class="nudge"
+          />
+          <input id="nudgeAmount" value="25" size="5" maxlength="5" />
+        </p>
+        <p class="buttonRow">
+          <label>&nbsp;</label>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowSW.gif"
+            alt="Down-left"
+            class="nudge"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowS.gif"
+            alt="Down"
+            class="nudge"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowSE.gif"
+            alt="Down-right"
+            class="nudge"
+          />
+        </p>
+        <p>
+          <label for="editAngle">Angle:</label
+          ><input id="editAngle" size="5" maxlength="5" />
+          <input type="checkbox" id="editClockwise" />
+          <label for="editClockwise">Clockwise</label>
+        </p>
+        <p class="buttonRow">
+          <label>Turn:</label>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowNW.gif"
+            alt="Up-left"
+            class="rotate"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowN.gif"
+            alt="Up"
+            class="rotate"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowNE.gif"
+            alt="Up-right"
+            class="rotate"
+          />
+        </p>
+        <p class="buttonRow">
+          <label>&nbsp;</label>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowW.gif"
+            alt="Left"
+            class="rotate"
+          />
+          <span class="filler">&nbsp;</span>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowE.gif"
+            alt="Right"
+            class="rotate"
+          />
+        </p>
+        <p class="buttonRow">
+          <label>&nbsp;</label>
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowSW.gif"
+            alt="Down-left"
+            class="rotate"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowS.gif"
+            alt="Down"
+            class="rotate"
+          />
+          <img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FarrowSE.gif"
+            alt="Down-right"
+            class="rotate"
+          />
+        </p>
+        <p>
+          <label for="selectedPosns" style="width: auto;"
+            >All selected positions:</label
+          >
+          <input type="checkbox" id="selectedPosns" disabled />
+        </p>
+        <p>
+          <label for="replicatePosns" style="width: auto;">Replicate:</label>
+          <input type="checkbox" id="replicatePosns" />
+          <button type="button" id="replicateConfig">Config</button>
+        </p>
+        <p>
+          <label>&nbsp;</label>
+          <button type="button" id="move">Move</button>
+        </p>
+      </div>
+      <div id="anglePanel">
+        <p>
+          <label for="angle1">Angle/Dist:</label
+          ><input id="angle1" size="5" maxlength="5" />
+          <input id="dist1" size="5" maxlength="5" />
+        </p>
+
+        <p>
+          <label for="angle2">Angle/Dist:</label
+          ><input id="angle2" size="5" maxlength="5" />
+          <input id="dist2" size="5" maxlength="5" />
+        </p>
+
+        <p>
+          <label>&nbsp;</label
+          ><button type="button" id="calcCoords">Calculate</button>
+        </p>
+        <p><label>Coordinates:</label><span id="coords"></span></p>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <p class="multiline"><label>Call:</label><span id="call">&#160;</span></p>
+    <audio id="synchMusic" preload="auto">No music available</audio>
+    <p>
+      Position:
+      <select id="position"><option>0</option></select>
+      <button type="button" id="prev">Prev</button>
+      <button type="button" id="next">Next</button>
+      <button type="button" id="step">Step</button>
+      <button type="button" id="play">Play</button>
+      <input type="checkbox" id="withMusic" /><label for="withMusic">with music</label>
+      <button type="button" id="callSheet">Call Sheet</button>
+      <button type="button" id="design">Design</button>
+      <a id="help" href="danceRef.html" target="_blank">Help</a>
+    </p>
+    <p id="musicAttribution"></p>
+    <p class="note">
+      Note: You can follow an individual person in the dance by clicking on
+      them.
+    </p>
+    <div id="designArea">
+      <ul>
+        <li>
+          <a href="#editDance"><span>Dance</span></a>
+        </li>
+        <li>
+          <a href="#editPositions"><span>Positions</span></a>
+        </li>
+        <li>
+          <a href="#editOutput"><span>Output</span></a>
+        </li>
+        <li>
+          <a href="#editConfig"><span>Config</span></a>
+        </li>
+      </ul>
+      <div id="editDance">
+        <p>
+          <label>&nbsp;</label
+          ><button type="button" id="newDance">New dance</button>
+        </p>
+        <p><label for="editName">Name:</label><input id="editName" /></p>
+        <p>
+          <label for="editFormation">Formation:</label
+          ><input id="editFormation" />
+        </p>
+        <p><label for="editMusic">Music:</label><input id="editMusic" /></p>
+        <p><label for="editSource">Source:</label><input id="editSource" /></p>
+        <p>
+          <label for="editNotes">Notes:</label
+          ><textarea id="editNotes" rows="5" cols="60"></textarea>
+        </p>
+        <p>
+          <label for="editSynchMusic">Synch music:</label
+          ><input id="editSynchMusic" />
+        </p>
+        <p>
+          <label for="editSynchAttribution">Attribution:</label
+          ><input id="editSynchAttribution" />
+        </p>
+        <p>
+          <label for="editSynchPeriod">Period:</label
+          ><input id="editSynchPeriod" />
+          <label for="editSynchDelay">Delay:</label
+          ><input id="editSynchDelay" />
+        </p>
+
+        <div id="editDancers"></div>
+      </div>
+      <div id="editPositions">
+        <p>
+          <label>&nbsp;</label
+          ><select id="actionPosition">
+            <option>Add</option
+            ><option>Delete</option>
+            <option>Copy</option
+            ><option>Move</option
+            ><option>Insert</option></select
+          >
+          <input type="text" id="countPosition" value="1" size="3" />
+          <select id="danceMove"></select>
+          <span id="actionAfter"
+            >after
+            <select id="afterPosition"></select
+          ></span>
+          <select id="actionAdjust"
+            ><option value="">directly</option>
+            <option value="transpose">and transpose</option>
+            <option value="linear">and progress linearly</option>
+            <option value="3in4">and progress 3 in 4</option>
+            <option value="becket">and progress Becket</option>
+            <option value="flip">and flip</option>
+            <option value="rotate">and rotate</option></select
+          >
+          <button type="button" id="goPosition">Go</button>
+        </p>
+        <p>
+          <label for="editCall">Period/Call:</label
+          ><input id="barPeriod" /><input id="editCall" />
+        </p>
+        <table id="tablePositions">
+          <thead>
+            <tr>
+              <th class="position">Index</th>
+              <th class="positionCheck">Select</th>
+              <th>Period</th>
+              <th>Call</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="editOutput">
+        <textarea></textarea>
+      </div>
+      <div id="editConfig">
+        <p>
+          <label for="showGrid">Show grid:</label
+          ><input type="checkbox" id="showGrid" />
+        </p>
+        <p>
+          <label for="editPeriod">Period (ms):</label><input id="editPeriod" />
+        </p>
+        <p>
+          <label for="floorSize">Floor size:</label><input id="floorSize" />
+        </p>
+      </div>
+    </div>
+    <div id="dialogUnderlay"></div>
+    <div id="replicateDialog" class="dialog">
+      <h2>Replicate Dancers</h2>
+      <p>
+        <label for="replicateType">Replication type:</label
+        ><select id="replicateType">
+          <option value="long">Longways set</option
+          ><option value="square">Square set</option>
+          <option value="circle">Circle</option>
+        </select>
+      </p>
+      <p>
+        <label for="replicateOffset">Dancers offset:</label
+        ><input type="text" id="replicateOffset" value="4" />
+      </p>
+      <p>
+        <label for="replicateDist">Distance:</label
+        ><input type="text" id="replicateDist" value="250" />
+      </p>
+      <p>
+        <label>&nbsp;</label><button type="button" id="replicateOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="newDialog" class="dialog">
+      <h2>Create a New Dance</h2>
+      <p>
+        <label for="newName">Name:</label><input type="text" id="newName" />
+      </p>
+      <p>
+        <label for="newDancers">No. of dancers:</label>
+        <input type="text" id="newDancers" value="8" size="3" />
+      </p>
+
+      <p>
+        <label for="newFormation">Formation:</label>
+        <select id="newFormation"
+          ><option value="square">Square set</option>
+          <option value="long">Longways set</option>
+          <option value="longi">Longways set improper</option>
+          <option value="longb">Longways set Becket</option>
+          <option value="circle">Circle</option></select
+        >
+      </p>
+      <p>
+        <label for="newPositions">No. of positions:</label>
+        <input type="text" id="newPositions" value="0" size="3" />
+      </p>
+
+      <p>
+        <label>&nbsp;</label><button type="button" id="newOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="callSheetDialog" class="dialog">
+      <p class="buttons">
+        <label>&nbsp;</label
+        ><button type="button" class="callClose">Close</button>&nbsp;
+        <button type="button" class="callPrint">Print</button>
+      </p>
+      <div id="callSheetOutput"></div>
+      <p class="buttons">
+        <label>&nbsp;</label
+        ><button type="button" class="callClose">Close</button>&nbsp;
+        <button type="button" class="callPrint">Print</button>
+      </p>
+    </div>
+    <div id="callSheetPrint">
+      <div id="callSheetOutput2"></div>
+    </div>
+    <div id="transposeDialog" class="dialog">
+      <h2>Transpose Dancers</h2>
+      <div id="transposeOutput"></div>
+      <p>
+        <label>&nbsp;</label><button type="button" id="transposeOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="linearDialog" class="dialog">
+      <h2>Linear Progression</h2>
+      <p>
+        <label for="perLine">Dancers per line:</label
+        ><input type="text" id="perLine" value="2" />
+      </p>
+      <p>
+        <label for="progressDist">Distance:</label
+        ><input type="text" id="progressDist" value="125" />
+      </p>
+      <p class="hide">
+        <label for="progressType">Type:</label>
+        <input type="radio" id="progressDuple" name="progressType" checked />
+        <label for="progressDuple">Duple</label>
+        <input type="radio" id="progressTriple" name="progressType" />
+        <label for="progressTriple">Triple</label>
+      </p>
+      <p>
+        <label>&nbsp;</label><button type="button" id="progressOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="progress3in4Dialog" class="dialog">
+      <h2>3 in 4 Progression</h2>
+      <p>
+        <label for="progress3in4Dist">Distance:</label
+        ><input type="text" id="progress3in4Dist" value="125" />
+      </p>
+      <p>
+        <label>&nbsp;</label
+        ><button type="button" id="progress3in4OK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="becketDialog" class="dialog">
+      <h2>Becket Progression</h2>
+      <p>
+        <label for="progressBecketDist">Distance:</label
+        ><input type="text" id="progressBecketDist" value="125" />
+      </p>
+      <p>
+        <label for="progressBecketDir">Clockwise:</label
+        ><input type="checkbox" id="progressBecketDir" checked />
+      </p>
+      <p>
+        <label>&nbsp;</label
+        ><button type="button" id="progressBecketOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="flipDialog" class="dialog">
+      <h2>Flip Dancers</h2>
+      <p>
+        <input type="radio" id="flipHorizontal" name="flipDancer" checked />
+        <label for="flipHorizontal"
+          ><img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FflipHoriz.gif"
+            alt="Flip horizontally"
+          />
+          Horizontally</label
+        >
+      </p>
+      <p>
+        <input type="radio" id="flipVertical" name="flipDancer" />
+        <label for="flipVertical"
+          ><img
+            src="https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2FflipVert.gif"
+            alt="Flip vertically"
+          />
+          Vertically</label
+        >
+      </p>
+      <p>
+        <label>&nbsp;</label><button type="button" id="flipOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+    <div id="rotateDialog" class="dialog">
+      <h2>Rotate Dancers</h2>
+      <p>
+        <label for="rotateAngle">Angle (degrees clockwise):</label>
+        <input type="text" id="rotateAngle" size="4" maxlength="4" value="90" />
+      </p>
+
+      <p>
+        <label>&nbsp;</label><button type="button" id="rotateOK">OK</button>
+        <button type="button" class="cancel">Cancel</button>
+      </p>
+    </div>
+  </body>
+</html>
