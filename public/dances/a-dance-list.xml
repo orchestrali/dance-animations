@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dances>
+	<dance def="BabyRose.json" type="Contra Longways Duple_minor">Baby Rose</dance>
+  <dance def="BerlinContra.json" type="Contra Longways Duple_minor">Berlin Contra</dance>
+  <dance def="Butter.json" type="Contra Longways Duple_minor Becket">Butter</dance>
+  <dance def="CatchAFallingStar.json" type="Contra Longways Duple_minor">Catch a Falling Star</dance>
+  <dance def="MaFavorite.json" type="Square Sieur_de_la_Cuisse">Ma Favorite</dance>
+  <dance def="NewBore.json" type="English Longways Triple_minor">The New Bore</dance>
+  <dance def="NiceCombination.json" type="Contra Longways Duple_minor">The Nice Combination</dance>
+	<dance def="SimplicitySwing.json" type="Contra Longways Duple_minor">Simplicity Swing</dance>
+</dances>
+

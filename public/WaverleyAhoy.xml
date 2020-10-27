@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dance>
+	<name>Waverley Ahoy</name>
+	<formation>Four couples longways, 2 and 4 improper</formation>
+	<music>Waverley Ahoy - 4 x 32 bar jig</music>
+	<sources></sources>
+	<notes></notes>
+	<dancers>
+		<dancer id="d0" label="G1" type="gent"/>
+		<dancer id="d1" label="L1" type="lady"/>
+		<dancer id="d2" label="G2" type="gent"/>
+		<dancer id="d3" label="L2" type="lady"/>
+		<dancer id="d4" label="G3" type="gent"/>
+		<dancer id="d5" label="L3" type="lady"/>
+		<dancer id="d6" label="G4" type="gent"/>
+		<dancer id="d7" label="L4" type="lady"/>
+	</dancers>
+	<positions>
+		<!-- x,y are coords, a is angle, cw is clockwise, ...2 are midpoint details -->
+		<position id="p0">
+			<place for="d0" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d1" x="75" y="-225" a="90" cw="true"/>
+			<place for="d2" x="75" y="-75" a="90" cw="true"/>
+			<place for="d3" x="-75" y="-75" a="270" cw="true"/>
+			<place for="d4" x="-75" y="75" a="270" cw="true"/>
+			<place for="d5" x="75" y="75" a="90" cw="true"/>
+			<place for="d6" x="75" y="225" a="90" cw="true"/>
+			<place for="d7" x="-75" y="225" a="270" cw="true"/>
+		</position>
+		<position id="p1">
+			<call>In fours, circle left half-way and turn single left</call>
+			<place for="d0" x="50" y="-200" a="45" cw="true"/>
+			<place for="d1" x="50" y="-100" a="135" cw="true"/>
+			<place for="d2" x="-50" y="-100" a="225" cw="true"/>
+			<place for="d3" x="-50" y="-200" a="315" cw="true"/>
+			<place for="d4" x="50" y="100" a="45" cw="true"/>
+			<place for="d5" x="50" y="200" a="135" cw="true"/>
+			<place for="d6" x="-50" y="200" a="225" cw="true"/>
+			<place for="d7" x="-50" y="100" a="315" cw="true"/>
+		</position>
+		<position id="p2">
+			<place for="d0" x="75" y="-75" a="90" cw="true"/>
+			<place for="d1" x="-75" y="-75" a="270" cw="true"/>
+			<place for="d2" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d3" x="75" y="-225" a="90" cw="true"/>
+			<place for="d4" x="75" y="225" a="90" cw="true"/>
+			<place for="d5" x="-75" y="225" a="270" cw="true"/>
+			<place for="d6" x="-75" y="75" a="270" cw="true"/>
+			<place for="d7" x="75" y="75" a="90" cw="true"/>
+		</position>
+		<position id="p3">
+			<place for="d0" x="75" y="-75" a="270" cw="false"/>
+			<place for="d1" x="-75" y="-75" a="90" cw="false"/>
+			<place for="d2" x="-75" y="-225" a="90" cw="false"/>
+			<place for="d3" x="75" y="-225" a="270" cw="false"/>
+			<place for="d4" x="75" y="225" a="270" cw="false"/>
+			<place for="d5" x="-75" y="225" a="90" cw="false"/>
+			<place for="d6" x="-75" y="75" a="90" cw="false"/>
+			<place for="d7" x="75" y="75" a="270" cw="false"/>
+		</position>
+		<position id="p4">
+			<place for="d0" x="75" y="-75" a="90" cw="false"/>
+			<place for="d1" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d2" x="-75" y="-225" a="270" cw="false"/>
+			<place for="d3" x="75" y="-225" a="90" cw="false"/>
+			<place for="d4" x="75" y="225" a="90" cw="false"/>
+			<place for="d5" x="-75" y="225" a="270" cw="false"/>
+			<place for="d6" x="-75" y="75" a="270" cw="false"/>
+			<place for="d7" x="75" y="75" a="90" cw="false"/>
+		</position>
+		<position id="p5">
+			<call>Middle four circle right half-way and turn single right, while ends two-hand turn partner once around</call>
+			<place for="d0" x="-50" y="-50" a="315" cw="false"/>
+			<place for="d1" x="-50" y="50" a="225" cw="false"/>
+			<place for="d2" x="0" y="-260" a="0" cw="true"/>
+			<place for="d3" x="0" y="-190" a="180" cw="true"/>
+			<place for="d4" x="0" y="260" a="180" cw="true"/>
+			<place for="d5" x="0" y="190" a="0" cw="true"/>
+			<place for="d6" x="50" y="50" a="135" cw="false"/>
+			<place for="d7" x="50" y="-50" a="45" cw="false"/>
+		</position>
+		<position id="p6">
+			<place for="d0" x="-75" y="75" a="270" cw="false"/>
+			<place for="d1" x="75" y="75" a="90" cw="false"/>
+			<place for="d2" x="35" y="-225" a="90" cw="true"/>
+			<place for="d3" x="-35" y="-225" a="270" cw="true"/>
+			<place for="d4" x="-35" y="225" a="270" cw="true"/>
+			<place for="d5" x="35" y="225" a="90" cw="true"/>
+			<place for="d6" x="75" y="-75" a="90" cw="false"/>
+			<place for="d7" x="-75" y="-75" a="270" cw="false"/>
+		</position>
+		<position id="p7">
+			<place for="d0" x="-75" y="75" a="90" cw="true"/>
+			<place for="d1" x="75" y="75" a="270" cw="true"/>
+			<place for="d2" x="0" y="-190" a="180" cw="true"/>
+			<place for="d3" x="0" y="-260" a="0" cw="true"/>
+			<place for="d4" x="0" y="190" a="0" cw="true"/>
+			<place for="d5" x="0" y="260" a="180" cw="true"/>
+			<place for="d6" x="75" y="-75" a="270" cw="true"/>
+			<place for="d7" x="-75" y="-75" a="90" cw="true"/>
+		</position>
+		<position id="p8">
+			<place for="d0" x="-75" y="75" a="0" cw="true"/>
+			<place for="d1" x="75" y="75" a="0" cw="true"/>
+			<place for="d2" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d3" x="75" y="-225" a="0" cw="true"/>
+			<place for="d4" x="75" y="225" a="180" cw="true"/>
+			<place for="d5" x="-75" y="225" a="180" cw="true"/>
+			<place for="d6" x="75" y="-75" a="180" cw="true"/>
+			<place for="d7" x="-75" y="-75" a="180" cw="true"/>
+		</position>
+		<position id="p9">
+			<call>All face neighbour, straight heys for four starting right shoulder</call>
+			<place for="d0" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d1" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d2" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d3" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d4" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d5" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d6" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d7" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+		</position>
+		<position id="p10">
+			<place for="d0" x="-75" y="225" a="180" cw="true"/>
+			<place for="d1" x="75" y="225" a="180" cw="true"/>
+			<place for="d2" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d3" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d4" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d5" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d6" x="75" y="-225" a="0" cw="true"/>
+			<place for="d7" x="-75" y="-225" a="0" cw="true"/>
+		</position>
+		<position id="p11">
+			<place for="d0" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d1" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d2" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d3" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d4" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d5" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d6" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d7" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+		</position>
+		<position id="p12">
+			<place for="d0" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d1" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d2" x="-75" y="225" a="180" cw="true"/>
+			<place for="d3" x="75" y="225" a="180" cw="true"/>
+			<place for="d4" x="75" y="-225" a="0" cw="true"/>
+			<place for="d5" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d6" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d7" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+		</position>
+		<position id="p13">
+			<place for="d0" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d1" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d2" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d3" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d4" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d5" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d6" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d7" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+		</position>
+		<position id="p14">
+			<place for="d0" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d1" x="75" y="-225" a="0" cw="true"/>
+			<place for="d2" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d3" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d4" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d5" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d6" x="75" y="225" a="180" cw="true"/>
+			<place for="d7" x="-75" y="225" a="180" cw="true"/>
+		</position>
+		<position id="p15">
+			<place for="d0" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d1" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d2" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d3" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d4" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d5" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d6" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d7" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+		</position>
+		<position id="p16">
+			<place for="d0" x="-75" y="75" a="270" cw="false" x2="-150" y2="0" a2="0" cw2="false"/>
+			<place for="d1" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d2" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d3" x="75" y="-225" a="0" cw="true"/>
+			<place for="d4" x="75" y="225" a="90" cw="true"/>
+			<place for="d5" x="-75" y="225" a="180" cw="true"/>
+			<place for="d6" x="75" y="-75" a="90" cw="false" x2="150" y2="0" a2="180" cw2="false"/>
+			<place for="d7" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+		</position>
+		<position id="p17">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="40" y="70" a="315" cw="true"/>
+			<place for="d1" x="40" y="150" a="45" cw="true"/>
+			<place for="d2" x="40" y="-150" a="315" cw="true"/>
+			<place for="d3" x="40" y="-70" a="45" cw="true"/>
+			<place for="d4" x="-40" y="150" a="135" cw="true"/>
+			<place for="d5" x="-40" y="70" a="225" cw="true"/>
+			<place for="d6" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d7" x="-40" y="-150" a="225" cw="true"/>
+		</position>
+		<position id="p18">
+			<place for="d0" x="40" y="150" a="45" cw="true"/>
+			<place for="d1" x="-40" y="150" a="135" cw="true"/>
+			<place for="d2" x="40" y="-70" a="45" cw="true"/>
+			<place for="d3" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d4" x="-40" y="70" a="225" cw="true"/>
+			<place for="d5" x="40" y="45" a="225" cw="true"/>
+			<place for="d6" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d7" x="40" y="-150" a="315" cw="true"/>
+		</position>
+		<position id="p19">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="-100" y="175" a="135" cw="true"/>
+			<place for="d1" x="-175" y="100" a="135" cw="true"/>
+			<place for="d2" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d3" x="-40" y="40" a="315" cw="false"/>
+			<place for="d4" x="40" y="40" a="225" cw="true"/>
+			<place for="d5" x="40" y="-40" a="135" cw="false"/>
+			<place for="d6" x="100" y="-175" a="315" cw="true"/>
+			<place for="d7" x="175" y="-100" a="315" cw="true"/>
+		</position>
+		<position id="p20">
+			<place for="d0" x="-150" y="40" a="135" cw="true"/>
+			<place for="d1" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d2" x="-65" y="40" a="45" cw="false"/>
+			<place for="d3" x="40" y="40" a="225" cw="false"/>
+			<place for="d4" x="65" y="-40" a="225" cw="false"/>
+			<place for="d5" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d6" x="150" y="-40" a="315" cw="true"/>
+			<place for="d7" x="150" y="40" a="45" cw="true"/>
+		</position>
+		<position id="p21">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d1" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d2" x="-150" y="40" a="135" cw="true"/>
+			<place for="d3" x="70" y="-40" a="225" cw="true"/>
+			<place for="d4" x="150" y="-40" a="315" cw="true"/>
+			<place for="d5" x="-70" y="40" a="45" cw="true"/>
+			<place for="d6" x="150" y="40" a="45" cw="true"/>
+			<place for="d7" x="70" y="40" a="135" cw="true"/>
+		</position>
+		<position id="p22">
+			<place for="d0" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d1" x="-45" y="40" a="315" cw="true"/>
+			<place for="d2" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d3" x="150" y="-40" a="315" cw="true"/>
+			<place for="d4" x="150" y="40" a="45" cw="true"/>
+			<place for="d5" x="-150" y="40" a="135" cw="true"/>
+			<place for="d6" x="70" y="40" a="135" cw="true"/>
+			<place for="d7" x="45" y="-40" a="135" cw="true"/>
+		</position>
+		<position id="p23">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="-40" y="40" a="315" cw="true"/>
+			<place for="d1" x="40" y="40" a="225" cw="false"/>
+			<place for="d2" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d3" x="175" y="100" a="45" cw="true"/>
+			<place for="d4" x="100" y="175" a="45" cw="true"/>
+			<place for="d5" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d6" x="40" y="-40" a="135" cw="true"/>
+			<place for="d7" x="-40" y="-40" a="45" cw="false"/>
+		</position>
+		<position id="p24">
+			<place for="d0" x="40" y="65" a="315" cw="false"/>
+			<place for="d1" x="40" y="-40" a="135" cw="false"/>
+			<place for="d2" x="40" y="-150" a="315" cw="true"/>
+			<place for="d3" x="40" y="150" a="45" cw="true"/>
+			<place for="d4" x="-40" y="150" a="135" cw="true"/>
+			<place for="d5" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d6" x="-40" y="-65" a="135" cw="false"/>
+			<place for="d7" x="-40" y="40" a="315" cw="false"/>
+		</position>
+		<position id="p25">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="40" y="150" a="45" cw="true"/>
+			<place for="d1" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d2" x="40" y="-70" a="45" cw="true"/>
+			<place for="d3" x="-40" y="150" a="135" cw="true"/>
+			<place for="d4" x="-40" y="70" a="225" cw="true"/>
+			<place for="d5" x="40" y="-150" a="315" cw="true"/>
+			<place for="d6" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d7" x="40" y="70" a="315" cw="true"/>
+		</position>
+		<position id="p26">
+			<place for="d0" x="-40" y="150" a="135" cw="true"/>
+			<place for="d1" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d2" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d3" x="-40" y="70" a="225" cw="true"/>
+			<place for="d4" x="40" y="45" a="225" cw="true"/>
+			<place for="d5" x="40" y="-70" a="45" cw="true"/>
+			<place for="d6" x="40" y="-150" a="315" cw="true"/>
+			<place for="d7" x="40" y="150" a="45" cw="true"/>
+		</position>
+		<position id="p27">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="-175" y="100" a="135" cw="true"/>
+			<place for="d1" x="100" y="-175" a="315" cw="true"/>
+			<place for="d2" x="-40" y="40" a="315" cw="false"/>
+			<place for="d3" x="40" y="40" a="225" cw="true"/>
+			<place for="d4" x="40" y="-40" a="135" cw="false"/>
+			<place for="d5" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d6" x="175" y="-100" a="315" cw="true"/>
+			<place for="d7" x="-100" y="175" a="135" cw="true"/>
+		</position>
+		<position id="p28">
+			<place for="d0" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d1" x="150" y="-40" a="315" cw="true"/>
+			<place for="d2" x="40" y="40" a="225" cw="false"/>
+			<place for="d3" x="65" y="-40" a="225" cw="false"/>
+			<place for="d4" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d5" x="-65" y="40" a="45" cw="false"/>
+			<place for="d6" x="150" y="40" a="45" cw="true"/>
+			<place for="d7" x="-150" y="40" a="135" cw="true"/>
+		</position>
+		<position id="p29">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d1" x="150" y="40" a="45" cw="true"/>
+			<place for="d2" x="70" y="-40" a="225" cw="true"/>
+			<place for="d3" x="150" y="-40" a="315" cw="true"/>
+			<place for="d4" x="-70" y="40" a="45" cw="true"/>
+			<place for="d5" x="-150" y="40" a="135" cw="true"/>
+			<place for="d6" x="70" y="40" a="135" cw="true"/>
+			<place for="d7" x="-150" y="-40" a="225" cw="true"/>
+		</position>
+		<position id="p30">
+			<place for="d0" x="-45" y="40" a="315" cw="true"/>
+			<place for="d1" x="70" y="40" a="135" cw="true"/>
+			<place for="d2" x="150" y="-40" a="315" cw="true"/>
+			<place for="d3" x="150" y="40" a="45" cw="true"/>
+			<place for="d4" x="-150" y="40" a="135" cw="true"/>
+			<place for="d5" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d6" x="45" y="-40" a="135" cw="true"/>
+			<place for="d7" x="-70" y="-40" a="315" cw="true"/>
+		</position>
+		<position id="p31">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="40" y="40" a="225" cw="false"/>
+			<place for="d1" x="40" y="-40" a="135" cw="true"/>
+			<place for="d2" x="175" y="100" a="45" cw="true"/>
+			<place for="d3" x="100" y="175" a="45" cw="true"/>
+			<place for="d4" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d5" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d6" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d7" x="-40" y="40" a="315" cw="true"/>
+		</position>
+		<position id="p32">
+			<place for="d0" x="75" y="-75" a="90" cw="false"/>
+			<place for="d1" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d2" x="75" y="225" a="90" cw="true"/>
+			<place for="d3" x="-75" y="225" a="270" cw="true"/>
+			<place for="d4" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d5" x="75" y="-225" a="90" cw="true"/>
+			<place for="d6" x="-75" y="75" a="270" cw="false"/>
+			<place for="d7" x="75" y="75" a="90" cw="false"/>
+		</position>
+		<position id="p33">
+			<call>Repeat from new positions - in fours, circle left half-way and turn single left</call>
+			<place for="d0" x="-50" y="-100" a="225" cw="true"/>
+			<place for="d1" x="-50" y="-200" a="315" cw="true"/>
+			<place for="d2" x="-50" y="200" a="225" cw="true"/>
+			<place for="d3" x="-50" y="100" a="315" cw="true"/>
+			<place for="d4" x="50" y="-200" a="45" cw="true"/>
+			<place for="d5" x="50" y="-100" a="135" cw="true"/>
+			<place for="d6" x="50" y="100" a="45" cw="true"/>
+			<place for="d7" x="50" y="200" a="135" cw="true"/>
+		</position>
+		<position id="p34">
+			<place for="d0" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d1" x="75" y="-225" a="90" cw="true"/>
+			<place for="d2" x="-75" y="75" a="270" cw="true"/>
+			<place for="d3" x="75" y="75" a="90" cw="true"/>
+			<place for="d4" x="75" y="-75" a="90" cw="true"/>
+			<place for="d5" x="-75" y="-75" a="270" cw="true"/>
+			<place for="d6" x="75" y="225" a="90" cw="true"/>
+			<place for="d7" x="-75" y="225" a="270" cw="true"/>
+		</position>
+		<position id="p35">
+			<place for="d0" x="-75" y="-225" a="90" cw="false"/>
+			<place for="d1" x="75" y="-225" a="270" cw="false"/>
+			<place for="d2" x="-75" y="75" a="90" cw="false"/>
+			<place for="d3" x="75" y="75" a="270" cw="false"/>
+			<place for="d4" x="75" y="-75" a="270" cw="false"/>
+			<place for="d5" x="-75" y="-75" a="90" cw="false"/>
+			<place for="d6" x="75" y="225" a="270" cw="false"/>
+			<place for="d7" x="-75" y="225" a="90" cw="false"/>
+		</position>
+		<position id="p36">
+			<place for="d0" x="-75" y="-225" a="270" cw="false"/>
+			<place for="d1" x="75" y="-225" a="90" cw="false"/>
+			<place for="d2" x="-75" y="75" a="270" cw="false"/>
+			<place for="d3" x="75" y="75" a="90" cw="false"/>
+			<place for="d4" x="75" y="-75" a="90" cw="false"/>
+			<place for="d5" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d6" x="75" y="225" a="90" cw="false"/>
+			<place for="d7" x="-75" y="225" a="270" cw="false"/>
+		</position>
+		<position id="p37">
+			<call>Middle four circle right half-way and turn single right, while ends two-hand turn partner once around</call>
+			<place for="d0" x="0" y="-260" a="0" cw="true"/>
+			<place for="d1" x="0" y="-190" a="180" cw="true"/>
+			<place for="d2" x="50" y="50" a="135" cw="false"/>
+			<place for="d3" x="50" y="-50" a="45" cw="false"/>
+			<place for="d4" x="-50" y="-50" a="315" cw="false"/>
+			<place for="d5" x="-50" y="50" a="225" cw="false"/>
+			<place for="d6" x="0" y="260" a="180" cw="true"/>
+			<place for="d7" x="0" y="190" a="0" cw="true"/>
+		</position>
+		<position id="p38">
+			<place for="d0" x="35" y="-225" a="90" cw="true"/>
+			<place for="d1" x="-35" y="-225" a="270" cw="true"/>
+			<place for="d2" x="75" y="-75" a="90" cw="false"/>
+			<place for="d3" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d4" x="-75" y="75" a="270" cw="false"/>
+			<place for="d5" x="75" y="75" a="90" cw="false"/>
+			<place for="d6" x="-35" y="225" a="270" cw="true"/>
+			<place for="d7" x="35" y="225" a="90" cw="true"/>
+		</position>
+		<position id="p39">
+			<place for="d0" x="0" y="-190" a="180" cw="true"/>
+			<place for="d1" x="0" y="-260" a="0" cw="true"/>
+			<place for="d2" x="75" y="-75" a="270" cw="true"/>
+			<place for="d3" x="-75" y="-75" a="90" cw="true"/>
+			<place for="d4" x="-75" y="75" a="90" cw="true"/>
+			<place for="d5" x="75" y="75" a="270" cw="true"/>
+			<place for="d6" x="0" y="190" a="0" cw="true"/>
+			<place for="d7" x="0" y="260" a="180" cw="true"/>
+		</position>
+		<position id="p40">
+			<place for="d0" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d1" x="75" y="-225" a="0" cw="true"/>
+			<place for="d2" x="75" y="-75" a="180" cw="true"/>
+			<place for="d3" x="-75" y="-75" a="180" cw="true"/>
+			<place for="d4" x="-75" y="75" a="0" cw="true"/>
+			<place for="d5" x="75" y="75" a="0" cw="true"/>
+			<place for="d6" x="75" y="225" a="180" cw="true"/>
+			<place for="d7" x="-75" y="225" a="180" cw="true"/>
+		</position>
+		<position id="p41">
+			<call>All face neighbour, straight heys for four starting right shoulder</call>
+			<place for="d0" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d1" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d2" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d3" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d4" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d5" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d6" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d7" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+		</position>
+		<position id="p42">
+			<place for="d0" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d1" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d2" x="75" y="-225" a="0" cw="true"/>
+			<place for="d3" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d4" x="-75" y="225" a="180" cw="true"/>
+			<place for="d5" x="75" y="225" a="180" cw="true"/>
+			<place for="d6" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d7" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+		</position>
+		<position id="p43">
+			<place for="d0" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d1" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d2" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d3" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d4" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d5" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d6" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d7" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+		</position>
+		<position id="p44">
+			<place for="d0" x="-75" y="225" a="180" cw="true"/>
+			<place for="d1" x="75" y="225" a="180" cw="true"/>
+			<place for="d2" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d3" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d4" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d5" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d6" x="75" y="-225" a="0" cw="true"/>
+			<place for="d7" x="-75" y="-225" a="0" cw="true"/>
+		</position>
+		<position id="p45">
+			<place for="d0" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d1" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d2" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d3" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d4" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d5" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d6" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d7" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+		</position>
+		<position id="p46">
+			<place for="d0" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d1" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d2" x="75" y="225" a="180" cw="true"/>
+			<place for="d3" x="-75" y="225" a="180" cw="true"/>
+			<place for="d4" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d5" x="75" y="-225" a="0" cw="true"/>
+			<place for="d6" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d7" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+		</position>
+		<position id="p47">
+			<place for="d0" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d1" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d2" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d3" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d4" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d5" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d6" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d7" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+		</position>
+		<position id="p48">
+			<place for="d0" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d1" x="75" y="-225" a="0" cw="true"/>
+			<place for="d2" x="75" y="-75" a="90" cw="false" x2="150" y2="0" a2="180" cw2="false"/>
+			<place for="d3" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d4" x="-75" y="75" a="270" cw="false" x2="-150" y2="0" a2="0" cw2="false"/>
+			<place for="d5" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d6" x="75" y="225" a="90" cw="true"/>
+			<place for="d7" x="-75" y="225" a="180" cw="true"/>
+		</position>
+		<position id="p49">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="40" y="-150" a="315" cw="true"/>
+			<place for="d1" x="40" y="-70" a="45" cw="true"/>
+			<place for="d2" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d3" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d4" x="40" y="70" a="315" cw="true"/>
+			<place for="d5" x="40" y="150" a="45" cw="true"/>
+			<place for="d6" x="-40" y="150" a="135" cw="true"/>
+			<place for="d7" x="-40" y="70" a="225" cw="true"/>
+		</position>
+		<position id="p50">
+			<place for="d0" x="40" y="-70" a="45" cw="true"/>
+			<place for="d1" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d2" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d3" x="40" y="-150" a="315" cw="true"/>
+			<place for="d4" x="40" y="150" a="45" cw="true"/>
+			<place for="d5" x="-40" y="150" a="135" cw="true"/>
+			<place for="d6" x="-40" y="70" a="225" cw="true"/>
+			<place for="d7" x="40" y="45" a="225" cw="true"/>
+		</position>
+		<position id="p51">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d1" x="-40" y="40" a="315" cw="false"/>
+			<place for="d2" x="100" y="-175" a="315" cw="true"/>
+			<place for="d3" x="175" y="-100" a="315" cw="true"/>
+			<place for="d4" x="-100" y="175" a="135" cw="true"/>
+			<place for="d5" x="-175" y="100" a="135" cw="true"/>
+			<place for="d6" x="40" y="40" a="225" cw="true"/>
+			<place for="d7" x="40" y="-40" a="135" cw="false"/>
+		</position>
+		<position id="p52">
+			<place for="d0" x="-65" y="40" a="45" cw="false"/>
+			<place for="d1" x="40" y="40" a="225" cw="false"/>
+			<place for="d2" x="150" y="-40" a="315" cw="true"/>
+			<place for="d3" x="150" y="40" a="45" cw="true"/>
+			<place for="d4" x="-150" y="40" a="135" cw="true"/>
+			<place for="d5" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d6" x="65" y="-40" a="225" cw="false"/>
+			<place for="d7" x="-40" y="-40" a="45" cw="false"/>
+		</position>
+		<position id="p53">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="-150" y="40" a="135" cw="true"/>
+			<place for="d1" x="70" y="-40" a="225" cw="true"/>
+			<place for="d2" x="150" y="40" a="45" cw="true"/>
+			<place for="d3" x="70" y="40" a="135" cw="true"/>
+			<place for="d4" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d5" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d6" x="150" y="-40" a="315" cw="true"/>
+			<place for="d7" x="-70" y="40" a="45" cw="true"/>
+		</position>
+		<position id="p54">
+			<place for="d0" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d1" x="150" y="-40" a="315" cw="true"/>
+			<place for="d2" x="70" y="40" a="135" cw="true"/>
+			<place for="d3" x="45" y="-40" a="135" cw="true"/>
+			<place for="d4" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d5" x="-45" y="40" a="315" cw="true"/>
+			<place for="d6" x="150" y="40" a="45" cw="true"/>
+			<place for="d7" x="-150" y="40" a="135" cw="true"/>
+		</position>
+		<position id="p55">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d1" x="175" y="100" a="45" cw="true"/>
+			<place for="d2" x="40" y="-40" a="135" cw="true"/>
+			<place for="d3" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d4" x="-40" y="40" a="315" cw="true"/>
+			<place for="d5" x="40" y="40" a="225" cw="false"/>
+			<place for="d6" x="100" y="175" a="45" cw="true"/>
+			<place for="d7" x="-175" y="-100" a="225" cw="true"/>
+		</position>
+		<position id="p56">
+			<place for="d0" x="40" y="-150" a="315" cw="true"/>
+			<place for="d1" x="40" y="150" a="45" cw="true"/>
+			<place for="d2" x="-40" y="-65" a="135" cw="false"/>
+			<place for="d3" x="-40" y="40" a="315" cw="false"/>
+			<place for="d4" x="40" y="65" a="315" cw="false"/>
+			<place for="d5" x="40" y="-40" a="135" cw="false"/>
+			<place for="d6" x="-40" y="150" a="135" cw="true"/>
+			<place for="d7" x="-40" y="-150" a="225" cw="true"/>
+		</position>
+		<position id="p57">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="40" y="-70" a="45" cw="true"/>
+			<place for="d1" x="-40" y="150" a="135" cw="true"/>
+			<place for="d2" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d3" x="40" y="70" a="315" cw="true"/>
+			<place for="d4" x="40" y="150" a="45" cw="true"/>
+			<place for="d5" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d6" x="-40" y="70" a="225" cw="true"/>
+			<place for="d7" x="40" y="-150" a="315" cw="true"/>
+		</position>
+		<position id="p58">
+			<place for="d0" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d1" x="-40" y="70" a="225" cw="true"/>
+			<place for="d2" x="40" y="-150" a="315" cw="true"/>
+			<place for="d3" x="40" y="150" a="45" cw="true"/>
+			<place for="d4" x="-40" y="150" a="135" cw="true"/>
+			<place for="d5" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d6" x="40" y="45" a="225" cw="true"/>
+			<place for="d7" x="40" y="-70" a="45" cw="true"/>
+		</position>
+		<position id="p59">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="-40" y="40" a="315" cw="false"/>
+			<place for="d1" x="40" y="40" a="225" cw="true"/>
+			<place for="d2" x="175" y="-100" a="315" cw="true"/>
+			<place for="d3" x="-100" y="175" a="135" cw="true"/>
+			<place for="d4" x="-175" y="100" a="135" cw="true"/>
+			<place for="d5" x="100" y="-175" a="315" cw="true"/>
+			<place for="d6" x="40" y="-40" a="135" cw="false"/>
+			<place for="d7" x="-40" y="-40" a="45" cw="true"/>
+		</position>
+		<position id="p60">
+			<place for="d0" x="40" y="40" a="225" cw="false"/>
+			<place for="d1" x="65" y="-40" a="225" cw="false"/>
+			<place for="d2" x="150" y="40" a="45" cw="true"/>
+			<place for="d3" x="-150" y="40" a="135" cw="true"/>
+			<place for="d4" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d5" x="150" y="-40" a="315" cw="true"/>
+			<place for="d6" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d7" x="-65" y="40" a="45" cw="false"/>
+		</position>
+		<position id="p61">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="70" y="-40" a="225" cw="true"/>
+			<place for="d1" x="150" y="-40" a="315" cw="true"/>
+			<place for="d2" x="70" y="40" a="135" cw="true"/>
+			<place for="d3" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d4" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d5" x="150" y="40" a="45" cw="true"/>
+			<place for="d6" x="-70" y="40" a="45" cw="true"/>
+			<place for="d7" x="-150" y="40" a="135" cw="true"/>
+		</position>
+		<position id="p62">
+			<place for="d0" x="150" y="-40" a="315" cw="true"/>
+			<place for="d1" x="150" y="40" a="45" cw="true"/>
+			<place for="d2" x="45" y="-40" a="135" cw="true"/>
+			<place for="d3" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d4" x="-45" y="40" a="315" cw="true"/>
+			<place for="d5" x="70" y="40" a="135" cw="true"/>
+			<place for="d6" x="-150" y="40" a="135" cw="true"/>
+			<place for="d7" x="-150" y="-40" a="225" cw="true"/>
+		</position>
+		<position id="p63">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="175" y="100" a="45" cw="true"/>
+			<place for="d1" x="100" y="175" a="45" cw="true"/>
+			<place for="d2" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d3" x="-40" y="40" a="315" cw="true"/>
+			<place for="d4" x="40" y="40" a="225" cw="false"/>
+			<place for="d5" x="40" y="-40" a="135" cw="true"/>
+			<place for="d6" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d7" x="-100" y="-175" a="225" cw="true"/>
+		</position>
+		<position id="p64">
+			<place for="d0" x="75" y="225" a="90" cw="true"/>
+			<place for="d1" x="-75" y="225" a="270" cw="true"/>
+			<place for="d2" x="-75" y="75" a="270" cw="false"/>
+			<place for="d3" x="75" y="75" a="90" cw="false"/>
+			<place for="d4" x="75" y="-75" a="90" cw="false"/>
+			<place for="d5" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d6" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d7" x="75" y="-225" a="90" cw="true"/>
+		</position>
+		<position id="p65">
+			<call>Repeat from new positions - in fours, circle left half-way and turn single left</call>
+			<place for="d0" x="-50" y="200" a="225" cw="true"/>
+			<place for="d1" x="-50" y="100" a="315" cw="true"/>
+			<place for="d2" x="50" y="100" a="45" cw="true"/>
+			<place for="d3" x="50" y="200" a="135" cw="true"/>
+			<place for="d4" x="-50" y="-100" a="225" cw="true"/>
+			<place for="d5" x="-50" y="-200" a="315" cw="true"/>
+			<place for="d6" x="50" y="-200" a="45" cw="true"/>
+			<place for="d7" x="50" y="-100" a="135" cw="true"/>
+		</position>
+		<position id="p66">
+			<place for="d0" x="-75" y="75" a="270" cw="true"/>
+			<place for="d1" x="75" y="75" a="90" cw="true"/>
+			<place for="d2" x="75" y="225" a="90" cw="true"/>
+			<place for="d3" x="-75" y="225" a="270" cw="true"/>
+			<place for="d4" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d5" x="75" y="-225" a="90" cw="true"/>
+			<place for="d6" x="75" y="-75" a="90" cw="true"/>
+			<place for="d7" x="-75" y="-75" a="270" cw="true"/>
+		</position>
+		<position id="p67">
+			<place for="d0" x="-75" y="75" a="90" cw="false"/>
+			<place for="d1" x="75" y="75" a="270" cw="false"/>
+			<place for="d2" x="75" y="225" a="270" cw="false"/>
+			<place for="d3" x="-75" y="225" a="90" cw="false"/>
+			<place for="d4" x="-75" y="-225" a="90" cw="false"/>
+			<place for="d5" x="75" y="-225" a="270" cw="false"/>
+			<place for="d6" x="75" y="-75" a="270" cw="false"/>
+			<place for="d7" x="-75" y="-75" a="90" cw="false"/>
+		</position>
+		<position id="p68">
+			<place for="d0" x="-75" y="75" a="270" cw="false"/>
+			<place for="d1" x="75" y="75" a="90" cw="false"/>
+			<place for="d2" x="75" y="225" a="90" cw="false"/>
+			<place for="d3" x="-75" y="225" a="270" cw="false"/>
+			<place for="d4" x="-75" y="-225" a="270" cw="false"/>
+			<place for="d5" x="75" y="-225" a="90" cw="false"/>
+			<place for="d6" x="75" y="-75" a="90" cw="false"/>
+			<place for="d7" x="-75" y="-75" a="270" cw="false"/>
+		</position>
+		<position id="p69">
+			<call>Middle four circle right half-way and turn single right, while ends two-hand turn partner once around</call>
+			<place for="d0" x="50" y="50" a="135" cw="false"/>
+			<place for="d1" x="50" y="-50" a="45" cw="false"/>
+			<place for="d2" x="0" y="260" a="180" cw="true"/>
+			<place for="d3" x="0" y="190" a="0" cw="true"/>
+			<place for="d4" x="0" y="-260" a="0" cw="true"/>
+			<place for="d5" x="0" y="-190" a="180" cw="true"/>
+			<place for="d6" x="-50" y="-50" a="315" cw="false"/>
+			<place for="d7" x="-50" y="50" a="225" cw="false"/>
+		</position>
+		<position id="p70">
+			<place for="d0" x="75" y="-75" a="90" cw="false"/>
+			<place for="d1" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d2" x="-35" y="225" a="270" cw="true"/>
+			<place for="d3" x="35" y="225" a="90" cw="true"/>
+			<place for="d4" x="35" y="-225" a="90" cw="true"/>
+			<place for="d5" x="-35" y="-225" a="270" cw="true"/>
+			<place for="d6" x="-75" y="75" a="270" cw="false"/>
+			<place for="d7" x="75" y="75" a="90" cw="false"/>
+		</position>
+		<position id="p71">
+			<place for="d0" x="75" y="-75" a="270" cw="true"/>
+			<place for="d1" x="-75" y="-75" a="90" cw="true"/>
+			<place for="d2" x="0" y="190" a="0" cw="true"/>
+			<place for="d3" x="0" y="260" a="180" cw="true"/>
+			<place for="d4" x="0" y="-190" a="180" cw="true"/>
+			<place for="d5" x="0" y="-260" a="0" cw="true"/>
+			<place for="d6" x="-75" y="75" a="90" cw="true"/>
+			<place for="d7" x="75" y="75" a="270" cw="true"/>
+		</position>
+		<position id="p72">
+			<place for="d0" x="75" y="-75" a="180" cw="true"/>
+			<place for="d1" x="-75" y="-75" a="180" cw="true"/>
+			<place for="d2" x="75" y="225" a="180" cw="true"/>
+			<place for="d3" x="-75" y="225" a="180" cw="true"/>
+			<place for="d4" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d5" x="75" y="-225" a="0" cw="true"/>
+			<place for="d6" x="-75" y="75" a="0" cw="true"/>
+			<place for="d7" x="75" y="75" a="0" cw="true"/>
+		</position>
+		<position id="p73">
+			<call>All face neighbour, straight heys for four starting right shoulder</call>
+			<place for="d0" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d1" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d2" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d3" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d4" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d5" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d6" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d7" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+		</position>
+		<position id="p74">
+			<place for="d0" x="75" y="-225" a="0" cw="true"/>
+			<place for="d1" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d2" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d3" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d4" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d5" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d6" x="-75" y="225" a="180" cw="true"/>
+			<place for="d7" x="75" y="225" a="180" cw="true"/>
+		</position>
+		<position id="p75">
+			<place for="d0" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d1" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d2" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d3" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d4" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d5" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d6" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d7" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+		</position>
+		<position id="p76">
+			<place for="d0" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d1" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d2" x="75" y="-225" a="0" cw="true"/>
+			<place for="d3" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d4" x="-75" y="225" a="180" cw="true"/>
+			<place for="d5" x="75" y="225" a="180" cw="true"/>
+			<place for="d6" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d7" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+		</position>
+		<position id="p77">
+			<place for="d0" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d1" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d2" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d3" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d4" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d5" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d6" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d7" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+		</position>
+		<position id="p78">
+			<place for="d0" x="75" y="225" a="180" cw="true"/>
+			<place for="d1" x="-75" y="225" a="180" cw="true"/>
+			<place for="d2" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d3" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d4" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d5" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d6" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d7" x="75" y="-225" a="0" cw="true"/>
+		</position>
+		<position id="p79">
+			<place for="d0" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d1" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d2" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d3" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d4" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d5" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d6" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d7" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+		</position>
+		<position id="p80">
+			<place for="d0" x="75" y="-75" a="90" cw="false" x2="150" y2="0" a2="180" cw2="false"/>
+			<place for="d1" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d2" x="75" y="225" a="90" cw="true"/>
+			<place for="d3" x="-75" y="225" a="180" cw="true"/>
+			<place for="d4" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d5" x="75" y="-225" a="0" cw="true"/>
+			<place for="d6" x="-75" y="75" a="270" cw="false" x2="-150" y2="0" a2="0" cw2="false"/>
+			<place for="d7" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+		</position>
+		<position id="p81">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d1" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d2" x="-40" y="150" a="135" cw="true"/>
+			<place for="d3" x="-40" y="70" a="225" cw="true"/>
+			<place for="d4" x="40" y="-150" a="315" cw="true"/>
+			<place for="d5" x="40" y="-70" a="45" cw="true"/>
+			<place for="d6" x="40" y="70" a="315" cw="true"/>
+			<place for="d7" x="40" y="150" a="45" cw="true"/>
+		</position>
+		<position id="p82">
+			<place for="d0" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d1" x="40" y="-150" a="315" cw="true"/>
+			<place for="d2" x="-40" y="70" a="225" cw="true"/>
+			<place for="d3" x="40" y="45" a="225" cw="true"/>
+			<place for="d4" x="40" y="-70" a="45" cw="true"/>
+			<place for="d5" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d6" x="40" y="150" a="45" cw="true"/>
+			<place for="d7" x="-40" y="150" a="135" cw="true"/>
+		</position>
+		<position id="p83">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="100" y="-175" a="315" cw="true"/>
+			<place for="d1" x="175" y="-100" a="315" cw="true"/>
+			<place for="d2" x="40" y="40" a="225" cw="true"/>
+			<place for="d3" x="40" y="-40" a="135" cw="false"/>
+			<place for="d4" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d5" x="-40" y="40" a="315" cw="false"/>
+			<place for="d6" x="-100" y="175" a="135" cw="true"/>
+			<place for="d7" x="-175" y="100" a="135" cw="true"/>
+		</position>
+		<position id="p84">
+			<place for="d0" x="150" y="-40" a="315" cw="true"/>
+			<place for="d1" x="150" y="40" a="45" cw="true"/>
+			<place for="d2" x="65" y="-40" a="225" cw="false"/>
+			<place for="d3" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d4" x="-65" y="40" a="45" cw="false"/>
+			<place for="d5" x="40" y="40" a="225" cw="false"/>
+			<place for="d6" x="-150" y="40" a="135" cw="true"/>
+			<place for="d7" x="-150" y="-40" a="225" cw="true"/>
+		</position>
+		<position id="p85">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="150" y="40" a="45" cw="true"/>
+			<place for="d1" x="70" y="40" a="135" cw="true"/>
+			<place for="d2" x="150" y="-40" a="315" cw="true"/>
+			<place for="d3" x="-70" y="40" a="45" cw="true"/>
+			<place for="d4" x="-150" y="40" a="135" cw="true"/>
+			<place for="d5" x="70" y="-40" a="225" cw="true"/>
+			<place for="d6" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d7" x="-70" y="-40" a="315" cw="true"/>
+		</position>
+		<position id="p86">
+			<place for="d0" x="70" y="40" a="135" cw="true"/>
+			<place for="d1" x="45" y="-40" a="135" cw="true"/>
+			<place for="d2" x="150" y="40" a="45" cw="true"/>
+			<place for="d3" x="-150" y="40" a="135" cw="true"/>
+			<place for="d4" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d5" x="150" y="-40" a="315" cw="true"/>
+			<place for="d6" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d7" x="-45" y="40" a="315" cw="true"/>
+		</position>
+		<position id="p87">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="40" y="-40" a="135" cw="true"/>
+			<place for="d1" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d2" x="100" y="175" a="45" cw="true"/>
+			<place for="d3" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d4" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d5" x="175" y="100" a="45" cw="true"/>
+			<place for="d6" x="-40" y="40" a="315" cw="true"/>
+			<place for="d7" x="40" y="40" a="225" cw="false"/>
+		</position>
+		<position id="p88">
+			<place for="d0" x="-40" y="-65" a="135" cw="false"/>
+			<place for="d1" x="-40" y="40" a="315" cw="false"/>
+			<place for="d2" x="-40" y="150" a="135" cw="true"/>
+			<place for="d3" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d4" x="40" y="-150" a="315" cw="true"/>
+			<place for="d5" x="40" y="150" a="45" cw="true"/>
+			<place for="d6" x="40" y="65" a="315" cw="false"/>
+			<place for="d7" x="40" y="-40" a="135" cw="false"/>
+		</position>
+		<position id="p89">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d1" x="40" y="70" a="315" cw="true"/>
+			<place for="d2" x="-40" y="70" a="225" cw="true"/>
+			<place for="d3" x="40" y="-150" a="315" cw="true"/>
+			<place for="d4" x="40" y="-70" a="45" cw="true"/>
+			<place for="d5" x="-40" y="150" a="135" cw="true"/>
+			<place for="d6" x="40" y="150" a="45" cw="true"/>
+			<place for="d7" x="-40" y="-70" a="135" cw="true"/>
+		</position>
+		<position id="p90">
+			<place for="d0" x="40" y="-150" a="315" cw="true"/>
+			<place for="d1" x="40" y="150" a="45" cw="true"/>
+			<place for="d2" x="40" y="45" a="225" cw="true"/>
+			<place for="d3" x="40" y="-70" a="45" cw="true"/>
+			<place for="d4" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d5" x="-40" y="70" a="225" cw="true"/>
+			<place for="d6" x="-40" y="150" a="135" cw="true"/>
+			<place for="d7" x="-40" y="-150" a="225" cw="true"/>
+		</position>
+		<position id="p91">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="175" y="-100" a="315" cw="true"/>
+			<place for="d1" x="-100" y="175" a="135" cw="true"/>
+			<place for="d2" x="40" y="-40" a="135" cw="false"/>
+			<place for="d3" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d4" x="-40" y="40" a="315" cw="false"/>
+			<place for="d5" x="40" y="40" a="225" cw="true"/>
+			<place for="d6" x="-175" y="100" a="135" cw="true"/>
+			<place for="d7" x="100" y="-175" a="315" cw="true"/>
+		</position>
+		<position id="p92">
+			<place for="d0" x="150" y="40" a="45" cw="true"/>
+			<place for="d1" x="-150" y="40" a="135" cw="true"/>
+			<place for="d2" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d3" x="-65" y="40" a="45" cw="false"/>
+			<place for="d4" x="40" y="40" a="225" cw="false"/>
+			<place for="d5" x="65" y="-40" a="225" cw="false"/>
+			<place for="d6" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d7" x="150" y="-40" a="315" cw="true"/>
+		</position>
+		<position id="p93">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="70" y="40" a="135" cw="true"/>
+			<place for="d1" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d2" x="-70" y="40" a="45" cw="true"/>
+			<place for="d3" x="-150" y="40" a="135" cw="true"/>
+			<place for="d4" x="70" y="-40" a="225" cw="true"/>
+			<place for="d5" x="150" y="-40" a="315" cw="true"/>
+			<place for="d6" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d7" x="150" y="40" a="45" cw="true"/>
+		</position>
+		<position id="p94">
+			<place for="d0" x="45" y="-40" a="135" cw="true"/>
+			<place for="d1" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d2" x="-150" y="40" a="135" cw="true"/>
+			<place for="d3" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d4" x="150" y="-40" a="315" cw="true"/>
+			<place for="d5" x="150" y="40" a="45" cw="true"/>
+			<place for="d6" x="-45" y="40" a="315" cw="true"/>
+			<place for="d7" x="70" y="40" a="135" cw="true"/>
+		</position>
+		<position id="p95">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d1" x="-40" y="40" a="315" cw="true"/>
+			<place for="d2" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d3" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d4" x="175" y="100" a="45" cw="true"/>
+			<place for="d5" x="100" y="175" a="45" cw="true"/>
+			<place for="d6" x="40" y="40" a="225" cw="false"/>
+			<place for="d7" x="40" y="-40" a="135" cw="true"/>
+		</position>
+		<position id="p96">
+			<place for="d0" x="-75" y="75" a="270" cw="false"/>
+			<place for="d1" x="75" y="75" a="90" cw="false"/>
+			<place for="d2" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d3" x="75" y="-225" a="90" cw="true"/>
+			<place for="d4" x="75" y="225" a="90" cw="true"/>
+			<place for="d5" x="-75" y="225" a="270" cw="true"/>
+			<place for="d6" x="75" y="-75" a="90" cw="false"/>
+			<place for="d7" x="-75" y="-75" a="270" cw="false"/>
+		</position>
+		<position id="p97">
+			<call>Repeat from new positions - in fours, circle left half-way and turn single left</call>
+			<place for="d0" x="50" y="100" a="45" cw="true"/>
+			<place for="d1" x="50" y="200" a="135" cw="true"/>
+			<place for="d2" x="50" y="-200" a="45" cw="true"/>
+			<place for="d3" x="50" y="-100" a="135" cw="true"/>
+			<place for="d4" x="-50" y="200" a="225" cw="true"/>
+			<place for="d5" x="-50" y="100" a="315" cw="true"/>
+			<place for="d6" x="-50" y="-100" a="225" cw="true"/>
+			<place for="d7" x="-50" y="-200" a="315" cw="true"/>
+		</position>
+		<position id="p98">
+			<place for="d0" x="75" y="225" a="90" cw="true"/>
+			<place for="d1" x="-75" y="225" a="270" cw="true"/>
+			<place for="d2" x="75" y="-75" a="90" cw="true"/>
+			<place for="d3" x="-75" y="-75" a="270" cw="true"/>
+			<place for="d4" x="-75" y="75" a="270" cw="true"/>
+			<place for="d5" x="75" y="75" a="90" cw="true"/>
+			<place for="d6" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d7" x="75" y="-225" a="90" cw="true"/>
+		</position>
+		<position id="p99">
+			<place for="d0" x="75" y="225" a="270" cw="false"/>
+			<place for="d1" x="-75" y="225" a="90" cw="false"/>
+			<place for="d2" x="75" y="-75" a="270" cw="false"/>
+			<place for="d3" x="-75" y="-75" a="90" cw="false"/>
+			<place for="d4" x="-75" y="75" a="90" cw="false"/>
+			<place for="d5" x="75" y="75" a="270" cw="false"/>
+			<place for="d6" x="-75" y="-225" a="90" cw="false"/>
+			<place for="d7" x="75" y="-225" a="270" cw="false"/>
+		</position>
+		<position id="p100">
+			<place for="d0" x="75" y="225" a="90" cw="false"/>
+			<place for="d1" x="-75" y="225" a="270" cw="false"/>
+			<place for="d2" x="75" y="-75" a="90" cw="false"/>
+			<place for="d3" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d4" x="-75" y="75" a="270" cw="false"/>
+			<place for="d5" x="75" y="75" a="90" cw="false"/>
+			<place for="d6" x="-75" y="-225" a="270" cw="false"/>
+			<place for="d7" x="75" y="-225" a="90" cw="false"/>
+		</position>
+		<position id="p101">
+			<call>Middle four circle right half-way and turn single right, while ends two-hand turn partner once around</call>
+			<place for="d0" x="0" y="260" a="180" cw="true"/>
+			<place for="d1" x="0" y="190" a="0" cw="true"/>
+			<place for="d2" x="-50" y="-50" a="315" cw="false"/>
+			<place for="d3" x="-50" y="50" a="225" cw="false"/>
+			<place for="d4" x="50" y="50" a="135" cw="false"/>
+			<place for="d5" x="50" y="-50" a="45" cw="false"/>
+			<place for="d6" x="0" y="-260" a="0" cw="true"/>
+			<place for="d7" x="0" y="-190" a="180" cw="true"/>
+		</position>
+		<position id="p102">
+			<place for="d0" x="-35" y="225" a="270" cw="true"/>
+			<place for="d1" x="35" y="225" a="90" cw="true"/>
+			<place for="d2" x="-75" y="75" a="270" cw="false"/>
+			<place for="d3" x="75" y="75" a="90" cw="false"/>
+			<place for="d4" x="75" y="-75" a="90" cw="false"/>
+			<place for="d5" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d6" x="35" y="-225" a="90" cw="true"/>
+			<place for="d7" x="-35" y="-225" a="270" cw="true"/>
+		</position>
+		<position id="p103">
+			<place for="d0" x="0" y="190" a="0" cw="true"/>
+			<place for="d1" x="0" y="260" a="180" cw="true"/>
+			<place for="d2" x="-75" y="75" a="90" cw="true"/>
+			<place for="d3" x="75" y="75" a="270" cw="true"/>
+			<place for="d4" x="75" y="-75" a="270" cw="true"/>
+			<place for="d5" x="-75" y="-75" a="90" cw="true"/>
+			<place for="d6" x="0" y="-190" a="180" cw="true"/>
+			<place for="d7" x="0" y="-260" a="0" cw="true"/>
+		</position>
+		<position id="p104">
+			<place for="d0" x="75" y="225" a="180" cw="true"/>
+			<place for="d1" x="-75" y="225" a="180" cw="true"/>
+			<place for="d2" x="-75" y="75" a="0" cw="true"/>
+			<place for="d3" x="75" y="75" a="0" cw="true"/>
+			<place for="d4" x="75" y="-75" a="180" cw="true"/>
+			<place for="d5" x="-75" y="-75" a="180" cw="true"/>
+			<place for="d6" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d7" x="75" y="-225" a="0" cw="true"/>
+		</position>
+		<position id="p105">
+			<call>All face neighbour, straight heys for four starting right shoulder</call>
+			<place for="d0" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d1" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d2" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d3" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d4" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d5" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d6" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d7" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+		</position>
+		<position id="p106">
+			<place for="d0" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d1" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d2" x="-75" y="225" a="180" cw="true"/>
+			<place for="d3" x="75" y="225" a="180" cw="true"/>
+			<place for="d4" x="75" y="-225" a="0" cw="true"/>
+			<place for="d5" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d6" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d7" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+		</position>
+		<position id="p107">
+			<place for="d0" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d1" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d2" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d3" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d4" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d5" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d6" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d7" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+		</position>
+		<position id="p108">
+			<place for="d0" x="75" y="-225" a="0" cw="true"/>
+			<place for="d1" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d2" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d3" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+			<place for="d4" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d5" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d6" x="-75" y="225" a="180" cw="true"/>
+			<place for="d7" x="75" y="225" a="180" cw="true"/>
+		</position>
+		<position id="p109">
+			<place for="d0" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d1" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d2" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d3" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+			<place for="d4" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d5" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d6" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d7" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+		</position>
+		<position id="p110">
+			<place for="d0" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d1" x="-75" y="75" a="0" cw="true" x2="-150" y2="0" a2="0" cw2="true"/>
+			<place for="d2" x="-75" y="-225" a="0" cw="true"/>
+			<place for="d3" x="75" y="-225" a="0" cw="true"/>
+			<place for="d4" x="75" y="225" a="180" cw="true"/>
+			<place for="d5" x="-75" y="225" a="180" cw="true"/>
+			<place for="d6" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d7" x="75" y="-75" a="180" cw="true" x2="150" y2="0" a2="180" cw2="true"/>
+		</position>
+		<position id="p111">
+			<place for="d0" x="75" y="225" a="0" cw="true" x2="150" y2="150" a2="0" cw2="true"/>
+			<place for="d1" x="-75" y="225" a="0" cw="true" x2="-50" y2="150" a2="0" cw2="true"/>
+			<place for="d2" x="-75" y="-75" a="0" cw="true" x2="-50" y2="-150" a2="0" cw2="true"/>
+			<place for="d3" x="75" y="-75" a="0" cw="true" x2="150" y2="-150" a2="0" cw2="true"/>
+			<place for="d4" x="75" y="75" a="180" cw="true" x2="50" y2="150" a2="180" cw2="true"/>
+			<place for="d5" x="-75" y="75" a="180" cw="true" x2="-150" y2="150" a2="180" cw2="true"/>
+			<place for="d6" x="-75" y="-225" a="180" cw="true" x2="-150" y2="-150" a2="180" cw2="true"/>
+			<place for="d7" x="75" y="-225" a="180" cw="true" x2="50" y2="-150" a2="180" cw2="true"/>
+		</position>
+		<position id="p112">
+			<place for="d0" x="75" y="225" a="90" cw="true"/>
+			<place for="d1" x="-75" y="225" a="180" cw="true"/>
+			<place for="d2" x="-75" y="75" a="270" cw="false" x2="-150" y2="0" a2="0" cw2="false"/>
+			<place for="d3" x="75" y="75" a="0" cw="true" x2="50" y2="0" a2="0" cw2="true"/>
+			<place for="d4" x="75" y="-75" a="90" cw="false" x2="150" y2="0" a2="180" cw2="false"/>
+			<place for="d5" x="-75" y="-75" a="180" cw="true" x2="-50" y2="0" a2="180" cw2="true"/>
+			<place for="d6" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d7" x="75" y="-225" a="0" cw="true"/>
+		</position>
+		<position id="p113">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="-40" y="150" a="135" cw="true"/>
+			<place for="d1" x="-40" y="70" a="225" cw="true"/>
+			<place for="d2" x="40" y="70" a="315" cw="true"/>
+			<place for="d3" x="40" y="150" a="45" cw="true"/>
+			<place for="d4" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d5" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d6" x="40" y="-150" a="315" cw="true"/>
+			<place for="d7" x="40" y="-70" a="45" cw="true"/>
+		</position>
+		<position id="p114">
+			<place for="d0" x="-40" y="70" a="225" cw="true"/>
+			<place for="d1" x="40" y="45" a="225" cw="true"/>
+			<place for="d2" x="40" y="150" a="45" cw="true"/>
+			<place for="d3" x="-40" y="150" a="135" cw="true"/>
+			<place for="d4" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d5" x="40" y="-150" a="315" cw="true"/>
+			<place for="d6" x="40" y="-70" a="45" cw="true"/>
+			<place for="d7" x="-40" y="-45" a="45" cw="true"/>
+		</position>
+		<position id="p115">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="40" y="40" a="225" cw="true"/>
+			<place for="d1" x="40" y="-40" a="135" cw="false"/>
+			<place for="d2" x="-100" y="175" a="135" cw="true"/>
+			<place for="d3" x="-175" y="100" a="135" cw="true"/>
+			<place for="d4" x="100" y="-175" a="315" cw="true"/>
+			<place for="d5" x="175" y="-100" a="315" cw="true"/>
+			<place for="d6" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d7" x="-40" y="40" a="315" cw="false"/>
+		</position>
+		<position id="p116">
+			<place for="d0" x="65" y="-40" a="225" cw="false"/>
+			<place for="d1" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d2" x="-150" y="40" a="135" cw="true"/>
+			<place for="d3" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d4" x="150" y="-40" a="315" cw="true"/>
+			<place for="d5" x="150" y="40" a="45" cw="true"/>
+			<place for="d6" x="-65" y="40" a="45" cw="false"/>
+			<place for="d7" x="40" y="40" a="225" cw="false"/>
+		</position>
+		<position id="p117">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="150" y="-40" a="315" cw="true"/>
+			<place for="d1" x="-70" y="40" a="45" cw="true"/>
+			<place for="d2" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d3" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d4" x="150" y="40" a="45" cw="true"/>
+			<place for="d5" x="70" y="40" a="135" cw="true"/>
+			<place for="d6" x="-150" y="40" a="135" cw="true"/>
+			<place for="d7" x="70" y="-40" a="225" cw="true"/>
+		</position>
+		<position id="p118">
+			<place for="d0" x="150" y="40" a="45" cw="true"/>
+			<place for="d1" x="-150" y="40" a="135" cw="true"/>
+			<place for="d2" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d3" x="-45" y="40" a="315" cw="true"/>
+			<place for="d4" x="70" y="40" a="135" cw="true"/>
+			<place for="d5" x="45" y="-40" a="135" cw="true"/>
+			<place for="d6" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d7" x="150" y="-40" a="315" cw="true"/>
+		</position>
+		<position id="p119">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="100" y="175" a="45" cw="true"/>
+			<place for="d1" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d2" x="-40" y="40" a="315" cw="true"/>
+			<place for="d3" x="40" y="40" a="225" cw="false"/>
+			<place for="d4" x="40" y="-40" a="135" cw="true"/>
+			<place for="d5" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d6" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d7" x="175" y="100" a="45" cw="true"/>
+		</position>
+		<position id="p120">
+			<place for="d0" x="-40" y="150" a="135" cw="true"/>
+			<place for="d1" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d2" x="40" y="65" a="315" cw="false"/>
+			<place for="d3" x="40" y="-40" a="135" cw="false"/>
+			<place for="d4" x="-40" y="-65" a="135" cw="false"/>
+			<place for="d5" x="-40" y="40" a="315" cw="false"/>
+			<place for="d6" x="40" y="-150" a="315" cw="true"/>
+			<place for="d7" x="40" y="150" a="45" cw="true"/>
+		</position>
+		<position id="p121">
+			<call>In fours, top and bottom, half right-hand star</call>
+			<place for="d0" x="-40" y="70" a="225" cw="true"/>
+			<place for="d1" x="40" y="-150" a="315" cw="true"/>
+			<place for="d2" x="40" y="150" a="45" cw="true"/>
+			<place for="d3" x="-40" y="-70" a="135" cw="true"/>
+			<place for="d4" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d5" x="40" y="70" a="315" cw="true"/>
+			<place for="d6" x="40" y="-70" a="45" cw="true"/>
+			<place for="d7" x="-40" y="150" a="135" cw="true"/>
+		</position>
+		<position id="p122">
+			<place for="d0" x="40" y="45" a="225" cw="true"/>
+			<place for="d1" x="40" y="-70" a="45" cw="true"/>
+			<place for="d2" x="-40" y="150" a="135" cw="true"/>
+			<place for="d3" x="-40" y="-150" a="225" cw="true"/>
+			<place for="d4" x="40" y="-150" a="315" cw="true"/>
+			<place for="d5" x="40" y="150" a="45" cw="true"/>
+			<place for="d6" x="-40" y="-45" a="45" cw="true"/>
+			<place for="d7" x="-40" y="70" a="225" cw="true"/>
+		</position>
+		<position id="p123">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the sides of the set</call>
+			<place for="d0" x="40" y="-40" a="135" cw="false"/>
+			<place for="d1" x="-40" y="-40" a="45" cw="true"/>
+			<place for="d2" x="-175" y="100" a="135" cw="true"/>
+			<place for="d3" x="100" y="-175" a="315" cw="true"/>
+			<place for="d4" x="175" y="-100" a="315" cw="true"/>
+			<place for="d5" x="-100" y="175" a="135" cw="true"/>
+			<place for="d6" x="-40" y="40" a="315" cw="false"/>
+			<place for="d7" x="40" y="40" a="225" cw="true"/>
+		</position>
+		<position id="p124">
+			<place for="d0" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d1" x="-65" y="40" a="45" cw="false"/>
+			<place for="d2" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d3" x="150" y="-40" a="315" cw="true"/>
+			<place for="d4" x="150" y="40" a="45" cw="true"/>
+			<place for="d5" x="-150" y="40" a="135" cw="true"/>
+			<place for="d6" x="40" y="40" a="225" cw="false"/>
+			<place for="d7" x="65" y="-40" a="225" cw="false"/>
+		</position>
+		<position id="p125">
+			<call>In fours on the sides, half right-hand star</call>
+			<place for="d0" x="-70" y="40" a="45" cw="true"/>
+			<place for="d1" x="-150" y="40" a="135" cw="true"/>
+			<place for="d2" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d3" x="150" y="40" a="45" cw="true"/>
+			<place for="d4" x="70" y="40" a="135" cw="true"/>
+			<place for="d5" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d6" x="70" y="-40" a="225" cw="true"/>
+			<place for="d7" x="150" y="-40" a="315" cw="true"/>
+		</position>
+		<position id="p126">
+			<place for="d0" x="-150" y="40" a="135" cw="true"/>
+			<place for="d1" x="-150" y="-40" a="225" cw="true"/>
+			<place for="d2" x="-45" y="40" a="315" cw="true"/>
+			<place for="d3" x="70" y="40" a="135" cw="true"/>
+			<place for="d4" x="45" y="-40" a="135" cw="true"/>
+			<place for="d5" x="-70" y="-40" a="315" cw="true"/>
+			<place for="d6" x="150" y="-40" a="315" cw="true"/>
+			<place for="d7" x="150" y="40" a="45" cw="true"/>
+		</position>
+		<position id="p127">
+			<call>Middle four left-hand star, while ends go single-file clockwise one quarter round to the ends of the set</call>
+			<place for="d0" x="-175" y="-100" a="225" cw="true"/>
+			<place for="d1" x="-100" y="-175" a="225" cw="true"/>
+			<place for="d2" x="40" y="40" a="225" cw="false"/>
+			<place for="d3" x="40" y="-40" a="135" cw="true"/>
+			<place for="d4" x="-40" y="-40" a="45" cw="false"/>
+			<place for="d5" x="-40" y="40" a="315" cw="true"/>
+			<place for="d6" x="175" y="100" a="45" cw="true"/>
+			<place for="d7" x="100" y="175" a="45" cw="true"/>
+		</position>
+		<position id="p128">
+			<place for="d0" x="-75" y="-225" a="270" cw="true"/>
+			<place for="d1" x="75" y="-225" a="90" cw="true"/>
+			<place for="d2" x="75" y="-75" a="90" cw="false"/>
+			<place for="d3" x="-75" y="-75" a="270" cw="false"/>
+			<place for="d4" x="-75" y="75" a="270" cw="false"/>
+			<place for="d5" x="75" y="75" a="90" cw="false"/>
+			<place for="d6" x="75" y="225" a="90" cw="true"/>
+			<place for="d7" x="-75" y="225" a="270" cw="true"/>
+		</position>
+	</positions>
+</dance>

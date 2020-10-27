@@ -1,0 +1,175 @@
+[
+  {
+    "name": "Allemande"
+  },
+  {
+    "name": "Arch and dive"
+  },
+  {
+    "name": "Balance"
+  },
+  {
+    "name": "Box circulate"
+  },
+  {
+    "name": "Box the gnat"
+  },
+  {
+    "name": "Butterfly whirl"
+  },
+  {
+    "name": "California twirl"
+  },
+  {
+    "name": "Cast off"
+  },
+  {
+    "name": "Circle"
+  },
+  {
+    "name": "Contra corners"
+  },
+  {
+    "name": "Courtesy turn"
+  },
+  {
+    "name": "Cross trail"
+  },
+  {
+    "name": "Dosido"
+  },
+  {
+    "name": "Down the hall"
+  },
+  {
+    "name": "Fall back"
+  },
+  {
+    "name": "Figure eight"
+  },
+  {
+    "name": "Forward"
+  },
+  {
+    "name": "Grand chain"
+  },
+  {
+    "name": "Grand right and left"
+  },
+  {
+    "name": "Grand square"
+  },
+  {
+    "name": "Give and take"
+  },
+  {
+    "name": "Half figure eight"
+  },
+  {
+    "name": "Half hey"
+  },
+  {
+    "name": "Hey"
+  },
+  {
+    "name": "Larks chain"
+  },
+  {
+    "name": "Lead up"
+  },
+  {
+    "name": "Lead down"
+  },
+  {
+    "name": "Long lines forward and back"
+  },
+  {
+    "name": "Mad Robin"
+  },
+  {
+    "name": "Nevada twirl"
+  },
+  {
+    "name": "Orbit"
+  },
+  {
+    "name": "Pass through"
+  },
+  {
+    "name": "Petronella"
+  },
+  {
+    "name": "Promenade"
+  },
+  {
+    "name": "Pull by"
+  },
+  {
+    "name": "Right and left through"
+  },
+  {
+    "name": "Robins chain",
+    "larkpos": {
+      "info": "beginning of courtesy turn",
+      "x": 30,
+      "y": -250,
+      "a": 120,
+      "arms": {"r": -5, "l": -60}
+    },
+    "robinpos": {
+      "info": "beginning of courtesy turn",
+      "x": 20,
+      "y": -179,
+      "a": 120,
+      "arms": {"r": -135, "l": -165}
+    }
+  },
+  {
+    "name": "Roll away"
+  },
+  {
+    "name": "Rory O'More"
+  },
+  {
+    "name": "See-saw"
+  },
+  {
+    "name": "Spiral"
+  },
+  {
+    "name": "Square through"
+  },
+  {
+    "name": "Star"
+  },
+  {
+    "name": "Star promenade"
+  },
+  {
+    "name": "Swat the flea"
+  },
+  {
+    "name": "Swing"
+  },
+  {
+    "name": "Swing through"
+  },
+  {
+    "name": "Turn single"
+  },
+  {
+    "name": "Turn alone"
+  },
+  {
+    "name": "Turn as a couple"
+  },
+  {
+    "name": "Two-hand turn"
+  },
+  {
+    "name": "Yearn"
+  },
+  {
+    "name": "Zigzag"
+  }
+]

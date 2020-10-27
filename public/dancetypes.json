@@ -1,0 +1,315 @@
+[
+  {
+    "type": "longways duple-minor improper facing-neighbor",
+    "roles": [
+      {
+        "x": 100,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one lark firstcorner"
+      },
+      {
+        "x": -100,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one robin second"
+      },
+      {
+        "x": -100,
+        "y": -50,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two lark second"
+      },
+      {
+        "x": 100,
+        "y": -50,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two robin firstcorner"
+      }
+    ],
+    "minorsets": true,
+    "inactives": [2,3],
+    "mindancers": 6,
+    "code": "a"
+  },
+  {
+    "type": "longways duple-minor improper long-lines",
+    "roles": [
+      {
+        "x": 100,
+        "y": -200,
+        "a": 270,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active one lark firstcorner"
+      },
+      {
+        "x": -100,
+        "y": -200,
+        "a": 90,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active one robin second"
+      },
+      {
+        "x": -100,
+        "y": -50,
+        "a": 90,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active two lark second"
+      },
+      {
+        "x": 100,
+        "y": -50,
+        "a": 270,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active two robin firstcorner"
+      }
+    ],
+    "minorsets": true,
+    "inactives": [2,3],
+    "mindancers": 6,
+    "code": "b"
+  },
+  {
+    "type": "longways duple-minor proper facing-neighbor",
+    "roles": [
+      {
+        "x": -100,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one lark firstcorner"
+      },
+      {
+        "x": 100,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one robin second"
+      },
+      {
+        "x": -100,
+        "y": -50,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two lark second"
+      },
+      {
+        "x": 100,
+        "y": -50,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two robin firstcorner"
+      }
+    ],
+    "minorsets": true,
+    "inactives": [2,3],
+    "mindancers": 6,
+    "code": "c"
+  },
+  {
+    "type": "square",
+    "roles": [
+      {
+        "x": 65,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head one lark"
+      },
+      {
+        "x": -65,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head one robin"
+      },
+      {
+        "x": -175,
+        "y": -90,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side two lark"
+      },
+      {
+        "x": -175,
+        "y": 40,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side two robin"
+      },
+      {
+        "x": -65,
+        "y": 150,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head three lark"
+      },
+      {
+        "x": 65,
+        "y": 150,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "head three robin"
+      },
+      {
+        "x": 175,
+        "y": 40,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side four lark"
+      },
+      {
+        "x": 175,
+        "y": -90,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "side four robin"
+      }
+    ],
+    "minorsets": false,
+    "code": "d"
+  },
+  {
+    "type": "longways duple-minor becket long-lines start-with-progression",
+    "roles": [
+      {
+        "x": 100,
+        "y": -50,
+        "a": 270,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active one lark firstcorner"
+      },
+      {
+        "x": 100,
+        "y": -200,
+        "a": 270,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active one robin second"
+      },
+      {
+        "x": -100,
+        "y": 100,
+        "a": 90,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active two lark second"
+      },
+      {
+        "x": -100,
+        "y": 250,
+        "a": 90,
+        "arms": {"r": "-55", "l": "-125"},
+        "who": "active two robin firstcorner"
+      }
+    ],
+    "minorsets": true,
+    "inactives": [2,3],
+    "mindancers": 6,
+    "code": "e"
+  },
+  {
+    "type": "longways triple-minor proper facing-neighbor",
+    "roles": [
+      {
+        "x": -100,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one lark firstcorner"
+      },
+      {
+        "x": 100,
+        "y": -200,
+        "a": 180,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one robin second"
+      },
+      {
+        "x": -100,
+        "y": -50,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two lark second"
+      },
+      {
+        "x": 100,
+        "y": -50,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two robin firstcorner"
+      },
+      {
+        "x": -100,
+        "y": 100,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active three lark"
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "a": 0,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active three robin"
+      }
+    ],
+    "minorsets": true,
+    "inactives": [2,3,4,5],
+    "mindancers": 8,
+    "code": "f"
+  },
+  {
+    "type": "longways triple-minor proper facing-across",
+    "roles": [
+      {
+        "x": -100,
+        "y": -200,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one lark firstcorner"
+      },
+      {
+        "x": 100,
+        "y": -200,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active one robin second"
+      },
+      {
+        "x": -100,
+        "y": -50,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two lark second"
+      },
+      {
+        "x": 100,
+        "y": -50,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active two robin firstcorner"
+      },
+      {
+        "x": -100,
+        "y": 100,
+        "a": 90,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active three lark"
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "a": 270,
+        "arms": {"r": "-135", "l": "-45"},
+        "who": "active three robin"
+      }
+    ],
+    "minorsets": true,
+    "inactives": [2,3,4,5],
+    "mindancers": 8,
+    "code": "f"
+  }
+]

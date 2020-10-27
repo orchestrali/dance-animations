@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dances>
+	<dance def="ChangelingIntuition.xml" type="Joseph_Pimentel Contra Longways Duple_minor">Changeling Intuition</dance>
+	<dance def="DutchCrossing.xml" type="Complex">Dutch Crossing</dance>
+	<dance def="IonaCross.xml" type="Scottish 6_couple Complex">Iona Cross</dance>
+	<dance def="Roulette.xml" type="Keith_Wood English 3_couple Circle Wooden_Leg_1">Roulette</dance>
+	<dance def="WaverleyAhoy.xml" type="Complex 4_couple Longways">Waverley Ahoy!</dance>
+</dances>

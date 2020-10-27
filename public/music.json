@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Track 15",
+    "start": 0.5,
+    "beat": 0.497,
+    "note": -3,
+    "repeats": 9,
+    "url": "https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2F15%20Track%2015.mp3?v=1601421515332"
+  },
+  {
+    "title": "Reel du Montreal/Pointe a pique",
+    "start": 0,
+    "beat": 0.51,
+    "note": -1.3,
+    "repeats": 7,
+    "url": "https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2F11%20Reel%20Du%20Montreal%20_%20Pointe%20a%20Pique.mp3?v=1601611454917",
+    "info": "'Reel du Montreal / Pointe a pique' played by <a href='https://www.elixirmusic.com/store/' target='blank'>Elixir</a>"
+  },
+  {
+    "title": "Ma Favorite",
+    "start": 1.26,
+    "beat": 0.625,
+    "note": -3,
+    "repeats": 9,
+    "url": "https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2Fma-favorite.wav?v=1603313386937",
+    "info": "Tune for this dance played by Alison Stevens"
+  },
+  {
+    "title": "The New Bourrée",
+    "start": 0.1,
+    "beat": 0.5357142857,
+    "note": -3,
+    "repeats": 2,
+    "url": "https://cdn.glitch.com/1b11a1fb-599e-47a3-9eff-c7176b15bb2c%2Fnew-bore.mp3?v=1602373541693"
+  }
+]
